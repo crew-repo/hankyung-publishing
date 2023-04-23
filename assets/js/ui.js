@@ -1114,7 +1114,7 @@
     slider: null,
     sliderEl: '.theme-column',
     config: {
-      // autoplay: true,
+      autoplay: true,
       observer: true,
       observeParents: true,
       slidesPerView: "auto",
@@ -1932,8 +1932,8 @@ function load(el, idx) {
 }
 
 $(window).on('load', function () {
-  $(document).on('click','.reply-add__more', function () {
-      // 숫자에 따라 노출되는 li개수 적용
-      load('.reply-list > ul > li', '7');
+  $(document).on('click', '.reply-add__more', function () {
+    // 숫자에 따라 노출되는 li개수 적용
+    load('.reply-list > ul > li', '7');
   })
 });

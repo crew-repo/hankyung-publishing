@@ -144,6 +144,8 @@
         slidesPerView: "auto",
         speed: 650,
         spaceBetween: 50,
+        observer: true,
+        observeParents: true,
         slideToClickedSlide: true,
         navigation: {
           nextEl: '.main-recommend-navi .swiper-next',
@@ -165,6 +167,8 @@
         slidesPerView: 1,
         speed: 650,
         spaceBetween: 18,
+        observer: true,
+        observeParents: true,
         pagination: {
           el: ".main-recommend-swiper-mo .swiper-pagination",
           type: 'bullets',
@@ -227,6 +231,11 @@
           type: 'bullets',
           clickable: true,
         },
+        breakpoints: {
+          360: {
+            slidesPerView: 1.25,
+          }
+        },
         slidesPerView: 'auto',
         centeredSlides: true,
         observer: true,
@@ -236,12 +245,12 @@
             const imgSrc = this.slides.eq(this.activeIndex).find('.best-item__img img').attr('src');
             this.$el.closest('.main-best-section').find('.full-image img').attr('src', imgSrc);
           },
-          slideChangeTransitionEnd: function () {
-            this.$el.closest('.main-best-section').find('.full-image').removeClass('dark');
-          },
-          slideChange: function () {
-            this.$el.closest('.main-best-section').find('.full-image').addClass('dark');
-          }
+          // slideChangeTransitionEnd: function () {
+          //   this.$el.closest('.main-best-section').find('.full-image').removeClass('dark');
+          // },
+          // slideChange: function () {
+          //   this.$el.closest('.main-best-section').find('.full-image').addClass('dark');
+          // }
         }
       },
       init: function () {
@@ -256,30 +265,42 @@
       sw: null,
       el: '.main-info__swiper',
       config: {
+        slidesPerView: 'auto',
+        autoHeight: true,
+        touchRatio: 0.2,
+        speed: 0,
+        // delay: 3000,
+        loop: true,
+        slideToClickedSlide: true,
+        observer: true,
+        observeParents: true,
         navigation: {
-          nextEl: ".main-info__swiper-cover .swiper-next",
-          prevEl: ".main-info__swiper-cover .swiper-prev",
+          nextEl: ".main-info-section .swiper-next",
+          prevEl: ".main-info-section .swiper-prev"
         },
         pagination: {
-          el: ".main-info__swiper-cover .swiper-paging",
+          el: ".main-info-section .swiper-paging",
           type: 'bullets',
-          clickable: true,
+          clickable: true
         },
-        slidesPerView: 'auto',
-        spaceBetween: 338,
-        touchRatio: 0,
-        speed: 0,
-        loop: true,
-        observer: true,
+        // initialSlide: 0,
+        // slideToClickedSlide: true,
+        // spaceBetween: 240,
         breakpoints: {
-          1280: {
-            spaceBetween: 318,
-          },
+          // 1280: {
+          //   spaceBetween: 318,
+          // },
           768: {
-            spaceBetween: 16,
-            slidesPerView: 1,
             speed: 100,
+            spaceBetween: 16,
             touchRatio: 0.2,
+            pagination: {
+              el: ".main-info-section .swiper-paging",
+              type: 'bullets',
+              clickable: true
+            },
+            observer: true,
+            observeParents: true
           }
         },
       },
@@ -289,6 +310,10 @@
             this.sw = new Swiper(this.el, this.config);
           }
         }
+        if (typeof (swiper) == 'object') swiper.destroy();
+      },
+      resize: function () {
+        this.init();
       }
     },
     artGuideSlider: {
@@ -388,11 +413,21 @@
         slidesPerView: 'auto',
         observer: true,
         observeParents: true,
+        breakpoints: {
+          738: {
+            slidesPerView: 'auto',
+            spaceBetween: '20',
+          },
+        },
         pagination: {
           el: ".main-news-controls .main-news__pagination",
           type: 'bullets',
-          clickable: true,
+          clickable: true
         },
+        navigation: {
+          nextEl: ".main-news-navi .swiper-next",
+          prevEl: ".main-news-navi .swiper-prev",
+        }
       },
       init: function () {
         if ($(this.el).length) {
@@ -420,7 +455,7 @@
       this.kvSlider.init();
       this.reviewSlider.init();
       this.bestSlider.init();
-      this.infoSlider.init();
+      // this.infoSlider.init();
       this.artGuideSlider.init();
       this.artistQuizSlide.init();
       this.artistNewSlide.init();
