@@ -67,7 +67,7 @@
 
         if (swEl.options.autoplay === true) {
           swEl.options.autoplay = {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
           }
         }
@@ -84,6 +84,18 @@
             $(swEl).find('.swiper-slide').removeClass('changing');
             $(swEl).find('.swiper-slide').addClass('changed');
           }
+
+          // slideToClickedSlide
+          $('[data-slider=curation]').on('click', '.swiper-slide', function (ev) {
+            if (!$(this).hasClass('swiper-slide-active')) {
+              ev.preventDefault();
+
+              var activeIdx = $(this).data('swiper-slide-index'),
+                swSpeed = swEl.options.speed;
+
+              swInstance.slideToLoop(activeIdx, swSpeed);
+            }
+          });
         }
 
         if ($(swEl).attr('data-curation-style') === 'overlap') {
