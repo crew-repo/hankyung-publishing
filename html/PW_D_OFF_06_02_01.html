@@ -141,14 +141,14 @@
                   </div>
                 </div>
                 <!-- 리뷰가 없을 경우 -->
-                <!-- <div class="offer-review__box">
+                <div class="offer-review__box">
                   <div class="offer-review-none">
                     <p class="offer-review-none__txt">해당 공연에 대한 회원 리뷰가 아직 없습니다!</p>
                     <div class="offer-review-none__btnbox">
                       <button type="button" class="btn-rect size-sm">리뷰 쓰기</button>
                     </div>
                   </div>
-                </div> -->
+                </div>
                 <!-- //리뷰가 없을 경우 -->
               </div>
             </div>
@@ -302,22 +302,23 @@
               <div class="ad-banner__list swiper-wrapper">
                 <a href="#" class="ad-banner__item swiper-slide">
                   <!-- Img PC -->
+                  <!-- 띠 배너  pc :  1824 * 300 mobile :  656 * 256 -->
                   <img src="../assets/images/@temp/@ad_banner_lg.png" alt="banner" class="ad-banner__img img--lg" />
                   <!-- Img PC 2 -->
-                  <img src="../assets/images/@temp/@ad_banner_md.png" alt="banner" class="ad-banner__img img--md" />
+                  <!-- <img src="../assets/images/@temp/@ad_banner_md.png" alt="banner" class="ad-banner__img img--md" /> -->
                   <!-- Img Tablet -->
-                  <img src="../assets/images/@temp/@ad_banner_sm.png" alt="banner" class="ad-banner__img img--sm" />
+                  <!-- <img src="../assets/images/@temp/@ad_banner_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
                   <!-- Img Tablet 2 -->
-                  <img src="../assets/images/@temp/@ad_banner_xs.png" alt="banner" class="ad-banner__img img--xs" />
+                  <!-- <img src="../assets/images/@temp/@ad_banner_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
                   <!-- Img Mobile -->
                   <img src="../assets/images/@temp/@ad_banner_mobile@2x.png" alt="banner"
                     class="ad-banner__img img--mo" />
                 </a>
                 <a href="#" class="ad-banner__item swiper-slide">
                   <img src="../assets/images/@temp/@ad_banner02_lg.png" alt="banner" class="ad-banner__img img--lg" />
-                  <img src="../assets/images/@temp/@ad_banner02_md.png" alt="banner" class="ad-banner__img img--md" />
-                  <img src="../assets/images/@temp/@ad_banner02_sm.png" alt="banner" class="ad-banner__img img--sm" />
-                  <img src="../assets/images/@temp/@ad_banner02_xs.png" alt="banner" class="ad-banner__img img--xs" />
+                  <!-- <img src="../assets/images/@temp/@ad_banner02_md.png" alt="banner" class="ad-banner__img img--md" /> -->
+                  <!-- <img src="../assets/images/@temp/@ad_banner02_sm.png" alt="banner" class="ad-banner__img img--sm" /> -->
+                  <!-- <img src="../assets/images/@temp/@ad_banner02_xs.png" alt="banner" class="ad-banner__img img--xs" /> -->
                   <img src="../assets/images/@temp/@ad_banner02_mobile@2x.png" alt="banner"
                     class="ad-banner__img img--mo" />
                 </a>
@@ -875,6 +876,79 @@
                   <span class="badge-star p3"></span>
                 </div>
                 <span class="rating-text">물개박수가 절로 나오는 공연</span>
+              </div>
+            </li>
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">회원 평점</span>
+                <div class="rating-score">
+                  <span class="rating-score__current">8.0</span>
+                  <span class="rating-score__total">/10</span>
+                </div>
+              </div>
+              <div class="rating-box">
+                <div class="star-box">
+                  <!-- [D] 0.5단위일 경우 p5 클래스 추가 / 1단위일 경우 p10 클래스 추가 -->
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p10"></i></span>
+                  <span class="star"><i class="star__point p5"></i></span>
+                </div>
+                <span class="rating-text">총 68명</span>
+              </div>
+            </li>
+            <li class="raito">
+              <p class="rating-title">회원 평점 분포</p>
+              <ul class="graph">
+                <li>
+                  <span class="ing-txt">10%</span>
+                  <div class="total-bar">
+                    <!-- 평점 비율 height 적용-->
+                    <span class="ing-bar" style="height: 10%;"></span>
+                  </div>
+                  <span class="age">9~10점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">2%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 2%;"></span>
+                  </div>
+                  <span class="age">7~8점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">5~6점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">40%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 40%;"></span>
+                  </div>
+                  <span class="age">3~4점</span>
+                </li>
+                <li>
+                  <span class="ing-txt">20%</span>
+                  <div class="total-bar">
+                    <span class="ing-bar" style="height: 20%;"></span>
+                  </div>
+                  <span class="age">1~2점</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="rating-wrap">
+            <li>
+              <div class="rating-box">
+                <span class="rating-title">전문가 평점</span>
+                <div class="badge-box">
+                  <!-- 리뷰가 없으면 p0 추가 -->
+                  <span class="badge-star p0"></span>
+                </div>
+                <span class="rating-text">평점이 없습니다.</span>
               </div>
             </li>
             <li>

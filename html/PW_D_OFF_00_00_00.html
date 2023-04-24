@@ -2654,7 +2654,7 @@
                         <span class="grade">
                           <span class="badge-star p3"></span>
                         </span>
-                        <span class="best-item__change down">1</span>
+                        <!-- <span class="best-item__change down">1</span> -->
                       </div>
                     </div>
                   </div>
@@ -2680,7 +2680,7 @@
                         <span class="grade">
                           <span class="badge-star p2"></span>
                         </span>
-                        <span class="best-item__change down">1</span>
+                        <!-- <span class="best-item__change down">1</span> -->
                       </div>
                     </div>
                   </div>
@@ -2708,7 +2708,7 @@
                         <span class="grade">
                           <span class="badge-star p3"></span>
                         </span>
-                        <span class="best-item__change up">1</span>
+                        <!-- <span class="best-item__change up">1</span> -->
                       </div>
                     </div>
                   </div>
@@ -7751,6 +7751,7 @@
         if (typeof (Infoswiper) == 'object') swiper.destroy();
         return Infoswiper = new Swiper('.main-info__swiper', {
           slidesPerView: 'auto',
+          slidesPerGroup: 3,
           touchRatio: 0.8,
           speed: 500,
           loop: true,
@@ -7767,6 +7768,8 @@
           },
           breakpoints: {
             768: {
+              slidesPerGroup: 1,
+              spaceBetween: 30,
               effect: 'fade',
               fadeEffect: {
                 crossFade: true
@@ -7794,7 +7797,8 @@
         if (typeof (swiper) == 'object') swiper.destroy();
 
         return swiper = new Swiper('.main-arti__swiper', {
-          slidesPerView: 'auto',
+          slidesPerView: 2,
+          slidesPerGroup: 2,
           // effect: effect,
           // effect: 'fade',
           // fadeEffect: {
@@ -7808,6 +7812,7 @@
           slideToClickedSlide: true,
           observer: true,
           observeParents: true,
+          spaceBetween: 36,
           pagination: {
             el: ".main-arti-section .swiper-paging",
             // type: "fraction",
