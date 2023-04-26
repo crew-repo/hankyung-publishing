@@ -2741,10 +2741,16 @@
                 <!-- tab  : button 활성화 'is-active' -->
                 <ul class="tab__list swiper-wrapper main-recommend-header-kv-list tab__list" data-tab="tab-list">
                   <li class="tab__item swiper-slide"><a href="#" class="tab__btn is-active">음악</a></li>
-                  <li class="tab__item swiper-slide"><a href="#" class="tab__btn">공연·영화</a></li>
+                  <li class="tab__item swiper-slide"><a href="#" class="tab__btn">공연</a></li>
                   <li class="tab__item swiper-slide"><a href="#" class="tab__btn">미술</a></li>
                   <li class="tab__item swiper-slide"><a href="#" class="tab__btn">책</a></li>
                 </ul>
+                <!-- 음악 tab  "main-info__tab-cont cont-music-->
+                <!-- <ul class="tab__list swiper-wrapper main-recommend-header-kv-list tab__list" data-tab="tab-list">
+                  <li class="tab__item swiper-slide"><a href="#" class="tab__btn">공연</a></li>
+                  <li class="tab__item swiper-slide"><a href="#" class="tab__btn">미술</a></li>
+                  <li class="tab__item swiper-slide"><a href="#" class="tab__btn">책</a></li>
+                </ul> -->
                 <div class="paging-wrap">
                   <div class="swiper-paging"></div>
 
@@ -2754,128 +2760,287 @@
               </div>
             </div>
             <div class="main-info__tab-cont-wrap">
-              <div class="main-info__tab-cont is-active">
+              <div class="main-info__tab-cont cont-music is-active">
                 <div class="main-info__swiper-cover">
                   <div class="main-info__swiper">
                     <ul class="swiper-wrapper">
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
                     </ul>
+                    <div class="swiper-paging swiper-pagination"></div>
                   </div>
                   <button type="button" class="swiper--btn swiper-prev"><span class="blind">이전</span></button>
                   <button type="button" class="swiper--btn swiper-next"><span class="blind">다음</span></button>
-                  <div class="swiper-paging swiper-pagination"></div>
                   <a href="#" class="btn show-more mo-show-more">SHOW MORE</a>
 
                   <!-- <button type=" button" class="btn show-more only-mo">show more</button> -->
                   <div class="text-box">
-                    <h3 class="text-box__title">hot&amp;New arte pick</h3>
+                    <!-- <h3 class="text-box__title">hot&amp;new arte pick</h3> -->
                     <p class="text-box__sub-tit">특별한 당신에게 <span class="color">추천</span>하는 문화 예술</p>
                     <div class="view-btn-wrap">
                       <a href="#" class="view-btn map"><span>view map</span></a>
@@ -2884,128 +3049,287 @@
                   </div>
                 </div>
               </div>
-              <div class="main-info__tab-cont">
+              <div class="main-info__tab-cont cont-movie">
                 <div class="main-info__swiper-cover">
                   <div class="main-info__swiper">
                     <ul class="swiper-wrapper">
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
                     </ul>
+                    <div class="swiper-paging swiper-pagination"></div>
                   </div>
                   <button type="button" class="swiper--btn swiper-prev"><span class="blind">이전</span></button>
                   <button type="button" class="swiper--btn swiper-next"><span class="blind">다음</span></button>
-                  <div class="swiper-paging swiper-pagination"></div>
                   <a href="#" class="btn show-more mo-show-more">SHOW MORE</a>
 
                   <!-- <button type=" button" class="btn show-more only-mo">show more</button> -->
                   <div class="text-box">
-                    <h3 class="text-box__title">hot&amp;New arte pick</h3>
+                    <!-- <h3 class="text-box__title">hot&amp;new arte pick</h3> -->
                     <p class="text-box__sub-tit">특별한 당신에게 <span class="color">추천</span>하는 문화 예술</p>
                     <div class="view-btn-wrap">
                       <a href="#" class="view-btn map"><span>view map</span></a>
@@ -3014,128 +3338,287 @@
                   </div>
                 </div>
               </div>
-              <div class="main-info__tab-cont">
+              <div class="main-info__tab-cont cont-art">
                 <div class="main-info__swiper-cover">
                   <div class="main-info__swiper">
                     <ul class="swiper-wrapper">
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
                     </ul>
+                    <div class="swiper-paging swiper-pagination"></div>
                   </div>
                   <button type="button" class="swiper--btn swiper-prev"><span class="blind">이전</span></button>
                   <button type="button" class="swiper--btn swiper-next"><span class="blind">다음</span></button>
-                  <div class="swiper-paging swiper-pagination"></div>
                   <a href="#" class="btn show-more mo-show-more">SHOW MORE</a>
 
                   <!-- <button type=" button" class="btn show-more only-mo">show more</button> -->
                   <div class="text-box">
-                    <h3 class="text-box__title">hot&amp;New arte pick</h3>
+                    <!-- <h3 class="text-box__title">hot&amp;new arte pick</h3> -->
                     <p class="text-box__sub-tit">특별한 당신에게 <span class="color">추천</span>하는 문화 예술</p>
                     <div class="view-btn-wrap">
                       <a href="#" class="view-btn map"><span>view map</span></a>
@@ -3144,128 +3627,287 @@
                   </div>
                 </div>
               </div>
-              <div class="main-info__tab-cont">
+              <div class="main-info__tab-cont cont-book">
                 <div class="main-info__swiper-cover">
                   <div class="main-info__swiper">
                     <ul class="swiper-wrapper">
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
-                          </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info01.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info02.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
                       <li class="swiper-slide">
-                        <div class="slide-box">
-                          <div class="book-box">
-                            <a href="#" class="book-box__img">
-                              <img src="../assets/images/@temp/@main_info03.jpg" alt="">
-                            </a>
-                            <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                            <span class="tag-gen">연극</span>
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
                           </div>
-                          <div class="loca-info">
-                            <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
-                            <ul class="art-info">
-                              <li class="ico-event">2022.10.25~2023.3.1</li>
-                              <li class="ico-location">잠실운동장 내 빅탑</li>
-                            </ul>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
                           </div>
                         </div>
                       </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="swiper-slide">
+                        <div class="sub-box">
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info01.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                            <div class="loca-info">
+                              <strong class="loca-info__name"><a href="#">태양의서커스 뉴알레그리아</a></strong>
+                              <ul class="art-info">
+                                <li class="ico-event">2022.10.25~2023.3.1</li>
+                                <li class="ico-location">잠실운동장 내 빅탑</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info02.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                          <div class="slide-box">
+                            <div class="book-box">
+                              <a href="#" class="book-box__img">
+                                <img src="../assets/images/@temp/@main_info03.jpg" alt="">
+                              </a>
+                              <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                              <span class="tag-gen">연극</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
                     </ul>
+                    <div class="swiper-paging swiper-pagination"></div>
                   </div>
                   <button type="button" class="swiper--btn swiper-prev"><span class="blind">이전</span></button>
                   <button type="button" class="swiper--btn swiper-next"><span class="blind">다음</span></button>
-                  <div class="swiper-paging swiper-pagination"></div>
                   <a href="#" class="btn show-more mo-show-more">SHOW MORE</a>
 
                   <!-- <button type=" button" class="btn show-more only-mo">show more</button> -->
                   <div class="text-box">
-                    <h3 class="text-box__title">hot&amp;New arte pick</h3>
+                    <!-- <h3 class="text-box__title">hot&amp;new arte pick</h3> -->
                     <p class="text-box__sub-tit">특별한 당신에게 <span class="color">추천</span>하는 문화 예술</p>
                     <div class="view-btn-wrap">
                       <a href="#" class="view-btn map"><span>view map</span></a>
@@ -3400,82 +4042,94 @@
               <div class="main-arti__swiper swiper">
                 <ul class="swiper-wrapper">
                   <li class="swiper-slide">
-                    <a href="#none" class="slide-inner">
-                      <div class="img-holder">
-                        <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
-                        <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                        <button type="button" class="btn-play"></button>
-                      </div>
-                      <div class="main-arti__img-title">
-                        111111111111111111111111111111111111111111111111111111111111111111111111111111
-                        <span class="tag-gen tag-gen--dark">오페라</span>
-                      </div>
-                    </a>
+                    <div class="slide-box">
+                      <a href="#none" class="slide-inner">
+                        <div class="img-holder">
+                          <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
+                          <button type="button" class="btn-play"></button>
+                        </div>
+                        <div class="main-arti__img-title">
+                          111111111111111111111111111111111111111111111111111111111111111111111111111111
+                          <span class="tag-gen tag-gen--dark">오페라</span>
+                        </div>
+                      </a>
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    </div>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#none" class="slide-inner">
-                      <div class="img-holder">
-                        <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
-                        <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                        <button type="button" class="btn-play"></button>
-                      </div>
-                      <div class="main-arti__img-title">
-                        22222222222222222222222222222222222222222222222222222
-                        <span class="tag-gen tag-gen--dark">오페라</span>
-                      </div>
-                    </a>
+                    <div class="slide-box">
+                      <a href="#none" class="slide-inner">
+                        <div class="img-holder">
+                          <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
+                          <button type="button" class="btn-play"></button>
+                        </div>
+                        <div class="main-arti__img-title">
+                          22222222222222222222222222222222222222222222222222222
+                          <span class="tag-gen tag-gen--dark">오페라</span>
+                        </div>
+                      </a>
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    </div>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#none" class="slide-inner">
-                      <div class="img-holder">
-                        <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
-                        <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                        <button type="button" class="btn-play"></button>
-                      </div>
-                      <div class="main-arti__img-title">
-                        33333333333333333333333333333333333333333333333333
-                        <span class="tag-gen tag-gen--dark">오페라</span>
-                      </div>
-                    </a>
+                    <div class="slide-box">
+                      <a href="#none" class="slide-inner">
+                        <div class="img-holder">
+                          <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
+                          <button type="button" class="btn-play"></button>
+                        </div>
+                        <div class="main-arti__img-title">
+                          33333333333333333333333333333333333333333333333333
+                          <span class="tag-gen tag-gen--dark">오페라</span>
+                        </div>
+                      </a>
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    </div>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#none" class="slide-inner">
-                      <div class="img-holder">
-                        <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
-                        <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                        <button type="button" class="btn-play"></button>
-                      </div>
-                      <div class="main-arti__img-title">
-                        4444444444444444444444444444444444444444444444444444444444444444444444444
-                        <span class="tag-gen tag-gen--dark">오페라</span>
-                      </div>
-                    </a>
+                    <div class="slide-box">
+                      <a href="#none" class="slide-inner">
+                        <div class="img-holder">
+                          <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
+                          <button type="button" class="btn-play"></button>
+                        </div>
+                        <div class="main-arti__img-title">
+                          4444444444444444444444444444444444444444444444444444444444444444444444444
+                          <span class="tag-gen tag-gen--dark">오페라</span>
+                        </div>
+                      </a>
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    </div>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#none" class="slide-inner">
-                      <div class="img-holder">
-                        <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
-                        <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                        <button type="button" class="btn-play"></button>
-                      </div>
-                      <div class="main-arti__img-title">
-                        55555555555555555555555555555555555555555555555555555555555555555555555555
-                        <span class="tag-gen tag-gen--dark">오페라</span>
-                      </div>
-                    </a>
+                    <div class="slide-box">
+                      <a href="#none" class="slide-inner">
+                        <div class="img-holder">
+                          <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
+                          <button type="button" class="btn-play"></button>
+                        </div>
+                        <div class="main-arti__img-title">
+                          55555555555555555555555555555555555555555555555555555555555555555555555555
+                          <span class="tag-gen tag-gen--dark">오페라</span>
+                        </div>
+                      </a>
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    </div>
                   </li>
                   <li class="swiper-slide">
-                    <a href="#none" class="slide-inner">
-                      <div class="img-holder">
-                        <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
-                        <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
-                        <button type="button" class="btn-play"></button>
-                      </div>
-                      <div class="main-arti__img-title">
-                        666666666666666666666666666666666666666666666666666666666666666666666666
-                        <span class="tag-gen tag-gen--dark">오페라</span>
-                      </div>
-                    </a>
+                    <div class="slide-box">
+                      <a href="#none" class="slide-inner">
+                        <div class="img-holder">
+                          <img src="../assets/images/@temp/@main_today_section01.jpg" alt="main today artist img">
+                          <button type="button" class="btn-play"></button>
+                        </div>
+                        <div class="main-arti__img-title">
+                          666666666666666666666666666666666666666666666666666666666666666666666666
+                          <span class="tag-gen tag-gen--dark">오페라</span>
+                        </div>
+                      </a>
+                      <button type="button" class="btn-fav btn-fav--wt" aria-label="Like"></button>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -3485,9 +4139,6 @@
               <div class="swiper-paging"></div>
 
             </div>
-            <p class="main-arti__big-tit">
-              Canvas of Inspiration through Video
-            </p>
           </div>
           <div class="swiper-button-next"></div>
 
@@ -3696,11 +4347,11 @@
                 <div class="tab">
                   <!-- tab  : button 활성화 'is-active' -->
                   <ul class="tab__list" data-tab="tab-list">
-                    <li class="tab__item"><a href="#tab-music" data-tab="tab-btn" class="tab__btn is-active">음악</a>
+                    <li class="tab__item"><a href="#" data-tab="tab-btn" class="tab__btn is-active">음악</a>
                     </li>
-                    <li class="tab__item"><a href="#tab-movie" data-tab="tab-btn" class="tab__btn">공연·영화</a></li>
-                    <li class="tab__item"><a href="#tab-visualart" data-tab="tab-btn" class="tab__btn">미술</a></li>
-                    <li class="tab__item"><a href="#tab-book" data-tab="tab-btn" class="tab__btn">책</a></li>
+                    <li class="tab__item"><a href="#" data-tab="tab-btn" class="tab__btn">공연·영화</a></li>
+                    <li class="tab__item"><a href="#" data-tab="tab-btn" class="tab__btn">미술</a></li>
+                    <li class="tab__item"><a href="#" data-tab="tab-btn" class="tab__btn">책</a></li>
                   </ul>
                 </div>
                 <a href="#" class="btn show-more">SHOW MORE</a>
@@ -3773,19 +4424,19 @@
                       </div>
 
                     </div>
+                    <div class="main-news-controls">
+                      <div class="main-news__pagination"></div>
+                    </div>
+                    <div class="main-news-navi news-tab">
+                      <!-- <div class="swiper-pagination">
+                        <span class="swiper-pagination-current">01</span>
+                        <span class="bar"></span>
+                        <span class="swiper-pagination-total">04</span>
+                      </div> -->
+                      <button type="button" class="swiper-btn swiper-prev">이전</button>
+                      <button type="button" class="swiper-btn swiper-next">다음</button>
+                    </div>
                   </div>
-                </div>
-                <div class="main-news-controls">
-                  <div class="main-news__pagination"></div>
-                </div>
-                <div class="main-news-navi news-tab">
-                  <!-- <div class="swiper-pagination">
-                    <span class="swiper-pagination-current">01</span>
-                    <span class="bar"></span>
-                    <span class="swiper-pagination-total">04</span>
-                  </div> -->
-                  <button type="button" class="swiper-btn swiper-prev">이전</button>
-                  <button type="button" class="swiper-btn swiper-next">다음</button>
                 </div>
                 <!-- <div class="main-news-navi news-tab">
                   <div class="swiper-pagination">
@@ -3945,20 +4596,21 @@
                         </div>
                       </div>
                     </div>
+                    <div class="main-news-controls">
+                      <div class="main-news__pagination"></div>
+                    </div>
+                    <div class="main-news-navi news-tab">
+                      <!-- <div class="swiper-pagination">
+                        <span class="swiper-pagination-current">02</span>
+                        <span class="bar"></span>
+                        <span class="swiper-pagination-total">04</span>
+                      </div> -->
+                      <button type="button" class="swiper-btn swiper-prev">이전</button>
+                      <button type="button" class="swiper-btn swiper-next">다음</button>
+                    </div>
                   </div>
                 </div>
-                <div class="main-news-controls">
-                  <div class="main-news__pagination"></div>
-                </div>
-                <div class="main-news-navi news-tab">
-                  <!-- <div class="swiper-pagination">
-                    <span class="swiper-pagination-current">02</span>
-                    <span class="bar"></span>
-                    <span class="swiper-pagination-total">04</span>
-                  </div> -->
-                  <button type="button" class="swiper-btn swiper-prev">이전</button>
-                  <button type="button" class="swiper-btn swiper-next">다음</button>
-                </div>
+
                 <!-- //PC -->
 
                 <!-- MO -->
@@ -4105,22 +4757,23 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div>                      
+                    </div>
+                    <div class="main-news-controls">
+                      <div class="main-news__pagination"></div>
+                    </div>
+                    <div class="main-news-navi news-tab">
+                      <!-- <div class="swiper-pagination">
+                        <span class="swiper-pagination-current">03</span>
+                        <span class="bar"></span>
+                        <span class="swiper-pagination-total">04</span>
+                      </div> -->
+                      <button type="button" class="swiper-btn swiper-prev">이전</button>
+                      <button type="button" class="swiper-btn swiper-next">다음</button>
                     </div>
                   </div>
                 </div>
-                <div class="main-news-controls">
-                  <div class="main-news__pagination"></div>
-                </div>
-                <div class="main-news-navi news-tab">
-                  <!-- <div class="swiper-pagination">
-                    <span class="swiper-pagination-current">03</span>
-                    <span class="bar"></span>
-                    <span class="swiper-pagination-total">04</span>
-                  </div> -->
-                  <button type="button" class="swiper-btn swiper-prev">이전</button>
-                  <button type="button" class="swiper-btn swiper-next">다음</button>
-                </div>
+
                 <!-- //PC -->
 
                 <!-- MO -->
@@ -4269,19 +4922,19 @@
                         </div>
                       </div>
                     </div>
+                    <div class="main-news-controls">
+                      <div class="main-news__pagination"></div>
+                    </div>
+                    <div class="main-news-navi news-tab">
+                      <!-- <div class="swiper-pagination">
+                        <span class="swiper-pagination-current">04</span>
+                        <span class="bar"></span>
+                        <span class="swiper-pagination-total">04</span>
+                      </div> -->
+                      <button type="button" class="swiper-btn swiper-prev">이전</button>
+                      <button type="button" class="swiper-btn swiper-next">다음</button>
+                    </div>
                   </div>
-                </div>
-                <div class="main-news-controls">
-                  <div class="main-news__pagination"></div>
-                </div>
-                <div class="main-news-navi news-tab">
-                  <!-- <div class="swiper-pagination">
-                    <span class="swiper-pagination-current">04</span>
-                    <span class="bar"></span>
-                    <span class="swiper-pagination-total">04</span>
-                  </div> -->
-                  <button type="button" class="swiper-btn swiper-prev">이전</button>
-                  <button type="button" class="swiper-btn swiper-next">다음</button>
                 </div>
                 <!-- //PC -->
 
@@ -7587,28 +8240,36 @@
       mainListItemSwiper();
       //// Main - 아르떼 톡 영역 swiper
 
+
+
+      // cont-music
+      // cont-movie
+      // cont-art
+      // cont-book
+
       // 정보 스와이퍼
       function mainInfoSwiper() {
         if (typeof (Infoswiper) == 'object') swiper.destroy();
-        return Infoswiper = new Swiper('.main-info__swiper', {
-          slidesPerView: 'auto',
-          slidesPerGroup: 3,
+        return Infoswiper = new Swiper('.main-info-section .cont-music .main-info__swiper', {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
           touchRatio: 0.8,
           speed: 500,
+          spaceBetween: 30,
           loop: true,
           autoHeight: true,
           slideToClickedSlide: true,
           observer: true,
           observeParents: true,
           pagination: {
-            el: ".main-info-section .swiper-pagination",
+            el: ".main-info-section .cont-music .swiper-pagination",
             type: 'bullets',
             clickable: true,
           },
 
           navigation: {
-            nextEl: ".main-info-section .swiper-next",
-            prevEl: ".main-info-section .swiper-prev",
+            nextEl: ".main-info-section .cont-music .swiper-next",
+            prevEl: ".main-info-section .cont-music .swiper-prev",
           },
           breakpoints: {
             768: {
@@ -7623,16 +8284,126 @@
         })
       }
 
-      function mainInfoSwiperResponsive() {
-        if (window.innerWidth > 768) {
-          mainInfoSwiper('fade');
-        } else if (window.innerWidth <= 768) {
-          mainInfoSwiper('slide');
-        }
+      function mainInfoSwiperMovie() {
+        if (typeof (InfoswiperMovie) == 'object') swiper.destroy();
+        return InfoswiperMovie = new Swiper('.main-info-section .cont-movie .main-info__swiper', {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          touchRatio: 0.8,
+          speed: 500,
+          spaceBetween: 30,
+          loop: true,
+          autoHeight: true,
+          slideToClickedSlide: true,
+          observer: true,
+          observeParents: true,
+          pagination: {
+            el: ".main-info-section .cont-movie .swiper-pagination",
+            type: 'bullets',
+            clickable: true,
+          },
+
+          navigation: {
+            nextEl: ".main-info-section .cont-movie .swiper-next",
+            prevEl: ".main-info-section .cont-movie .swiper-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerGroup: 1,
+              spaceBetween: 30,
+              effect: 'fade',
+              fadeEffect: {
+                crossFade: true
+              },
+            }
+          }
+        })
+      }
+
+      function mainInfoSwiperArt() {
+        if (typeof (InfoswiperArt) == 'object') swiper.destroy();
+        return InfoswiperArt = new Swiper('.main-info-section .cont-art .main-info__swiper', {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          touchRatio: 0.8,
+          speed: 500,
+          spaceBetween: 30,
+          loop: true,
+          autoHeight: true,
+          slideToClickedSlide: true,
+          observer: true,
+          observeParents: true,
+          pagination: {
+            el: ".main-info-section .cont-art .swiper-pagination",
+            type: 'bullets',
+            clickable: true,
+          },
+
+          navigation: {
+            nextEl: ".main-info-section .cont-art .swiper-next",
+            prevEl: ".main-info-section .cont-art .swiper-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerGroup: 1,
+              spaceBetween: 30,
+              effect: 'fade',
+              fadeEffect: {
+                crossFade: true
+              },
+            }
+          }
+        })
+      }
+
+      function mainInfoSwiperBook() {
+        if (typeof (InfoswiperBook) == 'object') swiper.destroy();
+        return InfoswiperBook = new Swiper('.main-info-section .cont-book .main-info__swiper', {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          touchRatio: 0.8,
+          speed: 500,
+          spaceBetween: 30,
+          loop: true,
+          autoHeight: true,
+          slideToClickedSlide: true,
+          observer: true,
+          observeParents: true,
+          pagination: {
+            el: ".main-info-section .cont-book .swiper-pagination",
+            type: 'bullets',
+            clickable: true,
+          },
+
+          navigation: {
+            nextEl: ".main-info-section .cont-book .swiper-next",
+            prevEl: ".main-info-section .cont-book .swiper-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerGroup: 1,
+              spaceBetween: 30,
+              effect: 'fade',
+              fadeEffect: {
+                crossFade: true
+              },
+            }
+          }
+        })
       }
 
 
-
+      // function mainInfoSwiperResponsive() {
+      //   if (window.innerWidth > 768) {
+      //     mainInfoSwiper('fade');
+      //   } else if (window.innerWidth <= 768) {
+      //     mainInfoSwiper('slide');
+      //   }
+      // }
+      mainInfoSwiper();
+      mainInfoSwiperMovie();
+      mainInfoSwiperArt();
+      mainInfoSwiperBook();
 
 
       // 오늘의 아티스트 스와이퍼
@@ -7713,10 +8484,10 @@
           clearTimeout(timer);
         }
         timer = setTimeout(TodayArtistSwiperResponsive, 100);
-        mainInfoSwiperResponsive();
+        // mainInfoSwiperResponsive();
       });
 
-      mainInfoSwiperResponsive();
+      // mainInfoSwiperResponsive();
       TodayArtistSwiperResponsive();
 
 
@@ -7764,53 +8535,78 @@
       // 칼럼 영역 스와이퍼 e
 
 
-
       // 뉴스 영역 스와이퍼 s
       function newsSwiper() {
         let main_today_swiper = new Swiper(".news-slide-wrap", {
           navigation: {
-            nextEl: ".news-slide-wrap .swiper-next",
-            prevEl: ".news-slide-wrap .swiper-prev",
+            nextEl: ".main-news-navi .swiper-next",
+            prevEl: ".main-news-navi .swiper-prev"
           },
           pagination: {
             el: ".main-news__pagination",
             type: 'bullets',
-            clickable: true,
+            clickable: true
           },
-          slidesPerView: 'auto',
+          slidesPerView: '2',
+          //slidesPerGroup: '2',
+          spaceBetween: 216,
           observer: true,
           observeParents: true,
-        })
+          breakpoints: {
+            768: {
+              slidesPerView: '1',
+              slidesPerGroup: '1',
+              spaceBetween: '20',
+              observer: true,
+              observeParents: true
+            },
+            1024: {
+              spaceBetween: '36',
+            },
+            1280: {
+              spaceBetween: '128',
+            },
+            1600: {
+              spaceBetween: '170',
+            }
+          }
+        });
+
+
+
       }
-      // newsSwiper();
+      newsSwiper();
+
+      // 뉴스 영역 스와이퍼 e
+
     });
 
     // 뉴스영역 탭메뉴
-    $(function () {
-      $('.main-news-section .tab__btn').on('click', function () {
-        var onTab = $(this).attr('href');
-        $('.main-news-section .tab-content').removeClass('is-active');
-        $(onTab).addClass('is-active');
-      });
+    // $(function () {
+    //   $('.main-news-section .tab__btn').on('click', function () {
+    //     var onTab = $(this).attr('href');
+    //     $('.main-news-section .tab-content').removeClass('is-active');
+    //     $(onTab).addClass('is-active');
+    //   });
 
-      $('.main-news-navi .swiper-next').on('click', function () {
-        $('.main-news-section .tab-content').removeClass('is-active');
-        $(this).closest('.main-news-section .tab-content').next('.main-news-section .tab-content').addClass(
-          'is-active');
-        $('.main-news-section .tab-block').find('.is-active').removeClass('is-active').closest('.tab__item')
-          .next('.main-news-section .tab__item')
-          .find('.main-news-section .tab__btn').addClass('is-active');
-      })
+    //   $('.main-news-navi .swiper-next').on('click', function () {
+    //     $('.main-news-section .tab-content').removeClass('is-active');
+    //     $(this).closest('.main-news-section .tab-content').next('.main-news-section .tab-content').addClass(
+    //       'is-active');
+    //     $('.main-news-section .tab-block').find('.is-active').removeClass('is-active').closest('.tab__item')
+    //       .next('.main-news-section .tab__item')
+    //       .find('.main-news-section .tab__btn').addClass('is-active');
+    //   })
 
-      $('.main-news-navi .swiper-prev').on('click', function () {
-        $('.main-news-section .tab-content').removeClass('is-active');
-        $(this).closest('.main-news-section .tab-content').prev('.main-news-section .tab-content').addClass(
-          'is-active');
-        $('.main-news-section .tab-block').find('.is-active').removeClass('is-active').closest(
-            '.main-news-section .tab__item').prev('.main-news-section .tab__item')
-          .find('.main-news-section .tab__btn').addClass('is-active');
-      })
-    })
+    //   $('.main-news-navi .swiper-prev').on('click', function () {
+    //     $('.main-news-section .tab-content').removeClass('is-active');
+    //     $(this).closest('.main-news-section .tab-content').prev('.main-news-section .tab-content').addClass(
+    //       'is-active');
+    //     $('.main-news-section .tab-block').find('.is-active').removeClass('is-active').closest(
+    //         '.main-news-section .tab__item').prev('.main-news-section .tab__item')
+    //       .find('.main-news-section .tab__btn').addClass('is-active');
+    //   })
+    // })
   </script>
   <script>
     // 리뷰의 발견 탭메뉴
@@ -7822,9 +8618,15 @@
       // 리뷰 영역
       var tabList = $('.main-review-section .main-recommend-header-kv-list .tab__item');
       var recomCont = $('.main-recommend-cont');
+
+      // 뉴스 영역
+      var newsList = $('.main-news-section .tab__list .tab__item');
+      var newsCont = $('.main-news-section .tab-content')
+
       // 칼럼 영역
       var columTabList = $('.main-column-section .main-recommend-header-kv-list .tab__item');
       var columCont = $('.main-column__swiper-cover');
+
       // 정보 영역
       var infoTab = $('.main-info-section .main-recommend-header-kv-list .tab__item');
       var infoCont = $('.main-info__tab-cont');
@@ -7842,11 +8644,13 @@
           swCont.removeClass("is-active");
 
           tabList.eq(num).addClass("is-active");
+          newsList.eq(num).addClass("is-active");
           swCont.eq(num).addClass("is-active");
         });
       }
 
       tabClick(recomCont, tabList);
+      tabClick(newsCont, newsList);
       tabClick(columCont, columTabList);
       tabClick(infoCont, infoTab);
 

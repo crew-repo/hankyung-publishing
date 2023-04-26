@@ -408,15 +408,17 @@
     },
     newsSlide: {
       sw: null,
-      el: '.tab-content.is-active .news-slide-wrap',
+      el: '.tab-content .news-slide-wrap',
       config: {
         slidesPerView: 'auto',
+        spaceBetween: '48',
         observer: true,
         observeParents: true,
         breakpoints: {
-          738: {
-            slidesPerView: 'auto',
+          768: {
+            slidesPerView: '1',
             spaceBetween: '20',
+            //centeredSlides: true,
           },
         },
         pagination: {
@@ -459,7 +461,7 @@
       this.artGuideSlider.init();
       this.artistQuizSlide.init();
       this.artistNewSlide.init();
-      this.newsSlide.init();
+      //this.newsSlide.init();
     },
     resize: function () {
       if (UI.mainUI.resizeSt !== null) {
@@ -468,7 +470,7 @@
       UI.mainUI.resizeSt = setInterval(function () {
         UI.mainUI.reviewSlider.resize();
         UI.mainUI.artGuideSlider.resize();
-        UI.mainUI.newsSlide.resize();
+        //UI.mainUI.newsSlide.resize();
         clearTimeout(UI.mainUI.resizeSt);
         UI.mainUI.resizeSt = null;
       }, 500);
