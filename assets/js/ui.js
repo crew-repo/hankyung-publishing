@@ -72,16 +72,19 @@
     headerReset: function () {
       $('.header__box').hide();
       $('#header').removeClass('header--opened');
+      $('#wrap').removeClass('dim');
     },
     hidden: function () {
       $(this.allSect).removeClass(this.allSectActive);
       $('#header').removeClass('header--opened');
+      $('#wrap').removeClass('dim');
       $(document).off('mouseover.allMouse');
     },
     open: function () {
       var _this = this;
       $(this.allSect).addClass(this.allSectActive);
       $('#header').addClass('header--opened');
+      $('#wrap').addClass('dim');
 
       if (UI.gnb.headerSw !== null) {
         UI.gnb.headerSw.destroy();
