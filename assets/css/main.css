@@ -426,6 +426,8 @@
 
 .main-arti-section { position: relative; overflow: hidden; padding: 40px 0 0; }
 
+.main-arti-section .slide-box .btn-fav { position: absolute; top: 15px; right: 15px; }
+
 .main-arti-section .only-mo { display: none; }
 
 .main-arti-section .btn.show-more { color: #f5f3ec; border-color: currentColor; margin-right: 58px; }
