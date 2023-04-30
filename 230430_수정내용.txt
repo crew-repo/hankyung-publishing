@@ -1,0 +1,53 @@
+KV타이틀 삭제 및 영역높이 지정
+
+PW_D_OFF_02_02_00.html
+PW_D_OFF_06_01_00.html
+
+style.css 수정내용
+
+.kv-rev-exhibit .kv-swiper__title { height: 115px; color: #746356; }
+.kv-rev-music__comment .tt { display: block; padding: 4px 0 40px 0; height: 236px; }
+.kv-rev-exhibit .kv-swiper__title { height: 100px; margin-bottom: 32px; }
+.kv-rev-music__comment .tt { height: 212px; font-size: 84px; }
+.kv-rev-exhibit .kv-swiper__title { height: 77px; margin-bottom: 28px; }
+.kv-rev-music__comment .tt { height: 172px; padding: 4px 0 40px 0; font-size: 64px; }
+
+---------------------------------
+내용 겹침현상 수정 
+
+PW_D_OFF_02_01_01.html
+
+style.css 수정내용
+
+.concert-loca__info-title-list li { display: flex; }
+.concert-loca__info-title-list li span { width: 52px; margin-right: 16px; }
+.concert-loca__info-title-list li:nth-child(1), .concert-loca__info-title-list li:nth-child(2), .concert-loca__info-title-list li:nth-child(3) { display: flex; }
+
+
+----------------------------------
+GNB 전체메뉴 목록 클릭시 GNB 전체메뉴 닫기
+
+ui.js
+
+63번째 라인부터 
+$(document).off('click', ".all-section .gnb-menu__depbox > li > a").on('click', ".all-section .gnb-menu__depbox > li > a", function () {
+        $(".all-section ").removeClass("is-active");
+        $('#wrap').removeClass('dim');
+        $('#header').removeClass('header--opened');
+      });
+
+--------------------------------------
+테마칼럼 인터뷰 기사목록 상세 모바일 이미지 크기 수정
+
+.view-editor .article-body-wrap > div img { width: 100% !important; height: 100% !important; }
+
+
+
+-------------------
+메인 아르떼 톡 슬라이드 3개 노출현상 수정
+
+PW_D_OFF_00_00_00.html
+
+// Main - 아르떼 톡/영상 영역 swiper
+//loop: true,
+loop옵션 주석처리

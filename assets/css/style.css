@@ -2565,7 +2565,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 
 .kv-rev-exhibit .kv-swiper img { border-radius: 8px; overflow: hidden; }
 
-.kv-rev-exhibit .kv-swiper__title { color: #746356; }
+.kv-rev-exhibit .kv-swiper__title { height: 115px; color: #746356; }
 
 .kv-rev-exhibit .kv-swiper__title i { font-size: 96px; }
 
@@ -3244,9 +3244,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 
 .kv-rev-music__comment { width: 640px; padding-top: 84.5px; flex-shrink: 0; overflow: hidden; position: relative; }
 
-.kv-rev-music__comment .tt { display: block; padding: 4px 0 40px 0; font-family: "PPEditorialNew", "Pretendard", Arial, Dotum, serif; font-size: 96px; font-style: italic; line-height: 1; background: linear-gradient(350deg, rgba(145, 94, 59, 0.4) 0%, rgba(152, 176, 159, 0.4) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-
-.kv-rev-music__comment .tt .st2 { font-style: normal; }
+.kv-rev-music__comment .tt { display: block; padding: 4px 0 40px 0; height: 236px; }
 
 .kv-rev-music__comment .subtt { padding-right: 80px; display: block; font-size: 24px; font-weight: 600; line-height: 1.3; color: #171010; overflow: hidden; max-width: 100%; text-overflow: ellipsis; vertical-align: middle; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; }
 
@@ -3525,7 +3523,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
   .kv-rev-exhibit .kv-swiper { width: 64%; }
   .kv-rev-exhibit .kv-swiper__img { max-width: 429px; max-height: 515px; min-height: 515px; min-width: 400px; margin-right: 32px; }
   .kv-rev-exhibit .kv-swiper__img a { width: 285px; height: 378px; }
-  .kv-rev-exhibit .kv-swiper__title { margin-bottom: 32px; }
+  .kv-rev-exhibit .kv-swiper__title { height: 100px; margin-bottom: 32px; }
   .kv-rev-exhibit .kv-swiper__title i { font-size: 84px; }
   .kv-rev-exhibit .kv-swiper__text { margin-top: 72px; }
   .kv-rev-exhibit .btn-fav { margin-right: -126px; }
@@ -3653,7 +3651,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
   .kv-video .changing.swiper-slide-active .video-item__inner .bg-img, .kv-video .changed.swiper-slide-active .video-item__inner .bg-img { height: 373px; }
   .kv-rev-music { height: 575px; padding: 7.5px 0 7.5px 108px; }
   .kv-rev-music__comment { width: 620px; padding-top: 42px; }
-  .kv-rev-music__comment .tt { font-size: 84px; }
+  .kv-rev-music__comment .tt { height: 212px; font-size: 84px; }
   .kv-rev-music__comment .util { bottom: 67.5px; }
   .kv-rev-music__comment .util .swiper-btn > * { width: 42px; height: 42px; }
   .kv-rev-music__comment .util .swiper-btn:after { width: 12px; height: 12px; }
@@ -3761,7 +3759,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
   .kv-rev-exhibit .kv-swiper { width: 64%; }
   .kv-rev-exhibit .kv-swiper__img { max-width: 320px; max-height: 402px; min-width: 240px; min-height: 402px; }
   .kv-rev-exhibit .kv-swiper__img a { width: 200px; height: 265px; }
-  .kv-rev-exhibit .kv-swiper__title { margin-bottom: 28px; }
+  .kv-rev-exhibit .kv-swiper__title { height: 77px; margin-bottom: 28px; }
   .kv-rev-exhibit .kv-swiper__title i { font-size: 64px; letter-spacing: -0.04em; }
   .kv-rev-exhibit .kv-swiper__text { margin-top: 48px; }
   .kv-rev-exhibit .btn-fav { margin-right: -84px; }
@@ -3933,7 +3931,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
   .kv-video .changing.swiper-slide-active .video-item__inner .bg-img, .kv-video .changed.swiper-slide-active .video-item__inner .bg-img { height: 286px; }
   .kv-rev-music { height: 469px; padding: 24px 0 24px 48px; }
   .kv-rev-music__comment { width: 540px; padding-top: 59.5px; }
-  .kv-rev-music__comment .tt { padding: 4px 0 40px 0; font-size: 64px; }
+  .kv-rev-music__comment .tt { height: 172px; padding: 4px 0 40px 0; font-size: 64px; }
   .kv-rev-music__comment .subtt { margin-top: 0; font-size: 18px; line-height: 1.4; }
   .kv-rev-music__comment .text { font-size: 12px; }
   .kv-rev-music__comment .util { bottom: 35.9px; }
@@ -7293,11 +7291,11 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 
 .concert-loca__info-title-list { margin-top: 38px; margin-bottom: auto; }
 
-.concert-loca__info-title-list li { position: relative; padding-left: 68px; }
+.concert-loca__info-title-list li { display: flex; }
 
 .concert-loca__info-title-list li span, .concert-loca__info-title-list li p { font-size: 14px; font-weight: 500; line-height: 21px; color: var(--color-light); }
 
-.concert-loca__info-title-list li span { position: absolute; top: 0; left: 0; display: block; width: 52px; }
+.concert-loca__info-title-list li span { width: 52px; margin-right: 16px; }
 
 .concert-loca__info-title-list li + li { margin-top: 8px; }
 
@@ -7913,7 +7911,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
   .one-line { padding: 24px; }
   .landing-page .img-looping { background-image: url(../../assets/images/landing_img_01.png); background-size: 100% 1920px; }
   .view-editor .article-body-wrap > div { width: 100%; }
-  .view-editor .article-body-wrap > div img { width: 100%; height: 100%; }
+  .view-editor .article-body-wrap > div img { width: 100% !important; height: 100% !important; }
   .view-wrap { max-width: 100%; }
   .view-wrap__detail { padding-top: 40px; }
   .view-wrap__detail .editor-paging { display: flex; }
@@ -8053,7 +8051,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
   .concert-loca__info-title-list li { display: none; }
   .concert-loca__info-title-list li span { font-size: 12px; color: #957A4F; }
   .concert-loca__info-title-list li p { font-size: 12px; color: var(--color-dark); }
-  .concert-loca__info-title-list li:nth-child(1), .concert-loca__info-title-list li:nth-child(2), .concert-loca__info-title-list li:nth-child(3) { display: block; }
+  .concert-loca__info-title-list li:nth-child(1), .concert-loca__info-title-list li:nth-child(2), .concert-loca__info-title-list li:nth-child(3) { display: flex; }
   .concert-loca__info-bottom { display: none; }
   .concert-loca__report { display: none; }
   .concert-review .one-line { position: relative; padding-top: 50px; }

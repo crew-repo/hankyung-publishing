@@ -60,6 +60,12 @@
         $(".header-search-bar__wrap").toggleClass(_this.allSectActive);
       });
 
+      $(document).off('click', ".all-section .gnb-menu__depbox > li > a").on('click', ".all-section .gnb-menu__depbox > li > a", function () {
+        $(".all-section ").removeClass("is-active");
+        $('#wrap').removeClass('dim');
+        $('#header').removeClass('header--opened');
+      });
+
       // $(this.closeBtn).off('click.allmenuClose').on('click.allmenuClose', function () {
       //   _this.hidden();
       // })
