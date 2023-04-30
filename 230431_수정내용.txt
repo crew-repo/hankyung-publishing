@@ -1,0 +1,5 @@
+Main KV 전체 이미지 타입 추가
+- PC/Mobile 이미지 추가로 진행
+
+main.css
+html 마크업 수정
