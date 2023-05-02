@@ -1839,6 +1839,8 @@ $(function () {
 
   // 기사, 리뷰 등 에디터에 있는 유튜브 감싸는 wrap 추가(스타일)
   $('.view-section .editor-section .view-editor iframe').wrap('<div class="youtube-wrap"></div>');
+  // 책 정보 상세 wrap 추가
+  $('.tit-line-box__wrap .tit-line-box__item iframe').wrap('<div class="tit-line-box__video"></div>');
 
   // all Check
   var allChks = '[data-check=allCheck]';

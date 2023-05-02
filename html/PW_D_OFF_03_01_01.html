@@ -118,29 +118,34 @@
                 <!-- //리뷰가 없을 경우 버튼 삭제 -->
               </div>
               <div class="offer-review__cont">
-                <div class="offer-review__box">
-                  <div class="thumb-img">
-                    <span class="img-holder"><img src="../assets/images/@temp/@thumg_offer_sub01.png" alt=""></span>
+                <!-- s 리뷰 있을때 a 링크 추가 -->
+                <a href="#">
+                  <div class="offer-review__box">
+                    <div class="thumb-img">
+                      <span class="img-holder"><img src="../assets/images/@temp/@thumg_offer_sub01.png" alt=""></span>
+                    </div>
+                    <div class="offer-review__inbox">
+                      <div class="offer-review__titbox">
+                        <h4 class="offer-review__intit">희망을 노래하는 화려한 춤의 향연</h4>
+                      </div>
+                      <p class="offer-review__txt">과연 '쇼 뮤지컬'이다. 시작하자마자 30여 명 배우들이 추는 탭댄스 소리가 객석을 꽉 채운다. 보통은 처음엔 잔잔하게
+                        시작해
+                        점차 긴장감을 고조하는데, 뮤지컬 '브로드웨이 42번가'는 처음부터 에너지 넘치는 군</p>
+                      <div class="view__tags">
+                        <span class="byname">서정원</span>
+                        <span class="tag">arte</span>
+                        <span class="grade">
+                          <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
+                          <span class="badge-star p2"></span>
+                        </span>
+                      </div>
+                      <div class="art-info-sub">
+                        <span class="text-date">2022.10.20</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="offer-review__inbox">
-                    <div class="offer-review__titbox">
-                      <h4 class="offer-review__intit">희망을 노래하는 화려한 춤의 향연</h4>
-                    </div>
-                    <p class="offer-review__txt">과연 '쇼 뮤지컬'이다. 시작하자마자 30여 명 배우들이 추는 탭댄스 소리가 객석을 꽉 채운다. 보통은 처음엔 잔잔하게 시작해
-                      점차 긴장감을 고조하는데, 뮤지컬 '브로드웨이 42번가'는 처음부터 에너지 넘치는 군</p>
-                    <div class="view__tags">
-                      <span class="byname">서정원</span>
-                      <span class="tag">arte</span>
-                      <span class="grade">
-                        <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
-                        <span class="badge-star p2"></span>
-                      </span>
-                    </div>
-                    <div class="art-info-sub">
-                      <span class="text-date">2022.10.20</span>
-                    </div>
-                  </div>
-                </div>
+                </a>
+                <!-- e 리뷰 있을때 a 링크 추가 -->
                 <!-- 리뷰가 없을 경우 -->
                 <!-- <div class="offer-review__box">
                   <div class="offer-review-none">
@@ -269,12 +274,12 @@
                     꿈이다. 불황에 빠진 공연계에서 ‘프리티 레이디’라는 작품으로 재기하려는 연출가 줄리안 마쉬가 진행하는 오디션에 응시하려 하지만 오디션 시간에 늦게 되어 좌절된다.
                     참가자들의 장난으로 페기는 남자 탈의실에 들어가게 되고 막 옷을 입고 있던 빌리 롤러를 만난다. 빌리는 도로시와 함께 주연배우다. 빌리는 페기에게 관심을 보인다.
                   </p>
-                  <div class="tit-line-box__video">
-                    <iframe width="1115" height="627" src="https://www.youtube.com/embed/o8mLMO6P5-A"
-                      title="[LIVE] 서진과 이정란, 한경arte 더클래식 2023" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
-                  </div>
+                  <!-- 책 정보 상세 wrap ui.js에서 추가 운영서버와 맞게 수정 -->
+                  <iframe width="1115" height="627" src="https://www.youtube.com/embed/o8mLMO6P5-A"
+                    title="[LIVE] 서진과 이정란, 한경arte 더클래식 2023" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
                 </div>
               </div>
 
@@ -1422,6 +1427,81 @@
                     </div>
                   </div>
                 </li>
+                <!-- 본인 작성글 수정하기 삭제하기 케이스 추가 -->
+                <li class="concert-review__item">
+                  <div class="one-line">
+                    <div class="concert-review__thumbnail">
+                      <ul>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb10.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="thumb-img">
+                            <span class="img-holder">
+                              <img src="../assets/images/@temp/@temp_thumb11.png" alt="">
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="setting" data-role="visible_wrap">
+                        <button type="button" class="setting__btn" aria-label="레이어 더보기"
+                          data-role="visible_btn"></button>
+                        <div class="setting__layer" data-role="visible_cont">
+                          <ul>
+                            <li><a href="#">수정하기</a></li>
+                            <li><a href="#">삭제하기</a></li>
+                          </ul>
+                          <button type="button" class="btn-close" data-role="hide_btn" aria-label="레이어 닫기"></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <!-- 아코디언 버튼 클릭시 is-active 추가 -->
+                      <span class="one-line__detail">
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                        대략적인 스토리는 보고갔지만 실제로 보니까 더 감동적이었습니다.
+                        드라큘라 역할의 테이님도 정말 멋지셨습니다.
+                        역시 믿고 듣는 보이스 입니다 !!
+                        그리고 개인적으로는 슬픈 로레인 역할을 하셨던 배우님의 순간 감정변화가 정말 인상적이었어요.
+                        모든 배우 분들 한 분 한 분 다 진심을 다하시는 모습이 멋졌습니다.
+                      </span>
+                    </div>
+                    <div class="one-line__info">
+                      <div class="one-line-by">
+                        <span class="byname">내 귀에 캔디</span>
+                        <span class="tag tag--line">회원</span>
+                        <span class="grade">
+                          <span class="star"><i class="star__point p9"></i></span>
+                          <em class="grade__num">4.0</em>
+                        </span>
+                      </div>
+                      <div class="one-line-sub">
+                        <div class="one-line-sub__box">
+                          <span class="text-date">2022.11.24</span>
+                          <div class="access-nums">
+                            <span class="acc-num acc-num--like"><em>120k</em></span>
+                            <button type="button" class="btn-fav" aria-label="Like"></button>
+                          </div>
+                        </div>
+                        <div class="one-line-sub__box">
+                          <!-- 클릭시 active 클래스가 붙는다. -->
+                          <button type="button" class="btn no-line h-add-btn is-active"><span class="arrow-txt">한줄평
+                              열기</span>
+                            <i class="ico ico-above"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- 본인 작성글 수정하기 삭제하기 케이스 추가 -->
               </ul>
               <!-- Paging -->
               <div class="paging">
