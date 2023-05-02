@@ -60,6 +60,13 @@
         $(".header-search-bar__wrap").toggleClass(_this.allSectActive);
       });
 
+      $(document).off('click', ".all-section .gnb-menu__depbox > li > a, .all-section-bottom .inquiry-btn").on('click', ".all-section .gnb-menu__depbox > li > a, .all-section-bottom .inquiry-btn", function () {
+        $(".all-section ").removeClass("is-active");
+        $('#wrap').removeClass('dim');
+        $('#header').removeClass('header--opened is-open');
+        $('.lnb-menu').removeClass('is-lnb-active');
+      });
+
       // $(this.closeBtn).off('click.allmenuClose').on('click.allmenuClose', function () {
       //   _this.hidden();
       // })
@@ -545,7 +552,9 @@
     swiper: function () {
       $(this.sliderEl).each(function (idx, el) {
         if (window.innerWidth <= 768) {
-          if ($(el).find('.swiper-slide').length > 1) {
+          // s 슬라이드 1개일때 영역 안잡히는 부분 수정
+          if ($(el).find('.swiper-slide').length >= 1) {
+            // e 슬라이드 1개일때 영역 안잡히는 부분 수정
             if (!$(el).hasClass('swiper-container-initialized')) {
               var _pagination = $(el).closest('.art-vt-slide__wrap').find('.art-vt-slide__pagination')[0];
               this.slider = new Swiper(el, {
@@ -1937,7 +1946,21 @@ $(document).ready(function () {
   if ($('.artist-db__wrapper.swiper').length) {
     artistVodSwiper();
   }
+
+  // s 우클릭 방지 스크립트 추가
+  $(document).bind("contextmenu", function (e) {
+    return false;
+  });
+  // e 우클릭 방지 스크립트 추가
 });
+// s 우클릭 방지 스크립트 추가
+$(document).bind('selectstart', function () {
+  return false;
+});
+$(document).bind('dragstart', function () {
+  return false;
+});
+// e 우클릭 방지 스크립트 추가
 
 // 댓글 목록 모바일 더보기 버튼 스크립트
 function load(el, idx) {
