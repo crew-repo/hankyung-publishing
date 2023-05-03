@@ -508,6 +508,11 @@
           this.slider.update();
         }
         UI.swAutoplayAdd(this.slider);
+      } else {
+        // ad-banner 아이템이 없을대 마진값 삭제
+        $('.ad-banner-wrap').css({
+          margin: 0,
+        });
       }
     },
   }

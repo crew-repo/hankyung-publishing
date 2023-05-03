@@ -233,7 +233,8 @@
         },
         breakpoints: {
           360: {
-            slidesPerView: 1.25,
+            // 이미지 크기 복원 안되는 이슈로 주석 처리
+            // slidesPerView: 1.25,
           }
         },
         slidesPerView: 'auto',
