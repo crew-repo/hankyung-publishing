@@ -8738,16 +8738,62 @@
             }
           }
         });
-
-
-
       }
       newsSwiper();
 
       // 뉴스 영역 스와이퍼 e
 
+      // 커튼배너 영역 스와이퍼 & 오토플레이 s
+      function cottonBannerSwiper() {
+        if (typeof (cotton_banner_swiper) == 'object') swiper.destroy();
+        return cotton_banner_swiper = new Swiper(".cotton-banner__wrap",{
+          observer: true,
+          observeParents: true,
+          slidesPerView: 'auto',
+          pagination: {
+            el: '.cotton-banner__control .swiper-pagination',
+            type: 'bullets',
+            clickable: true
+          },
+          autoplay: {  
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          loop: true
+        });
+      }
+
+      $(window).on("load",function(){
+        cottonBannerSwiper();
+      });
+
+      function playShow() {
+        $('.cotton-banner__control .btn-autoplay.swiper--play').removeClass('disabled');
+        $('.cotton-banner__control .btn-autoplay.swiper--pause').addClass('disabled');
+      }
+
+      function pauseShow() {
+        $('.cotton-banner__control .btn-autoplay.swiper--play').addClass('disabled');
+        $('.cotton-banner__control .btn-autoplay.swiper--pause').removeClass('disabled');
+      }
+
+      $(document).off('click','.cotton-banner__control .btn-autoplay').on('click','.cotton-banner__control .btn-autoplay', function (e) {
+        const btn = $(e.currentTarget);
+
+        if (btn.hasClass('swiper--play')) {
+          cotton_banner_swiper.autoplay.start();
+          pauseShow();
+        } else{
+          cotton_banner_swiper.autoplay.stop();
+          playShow();
+        }
+      });
+      // 커튼배너 영역 스와이퍼 & 오토플레이 e
     });
 
+
+
+    
     // 뉴스영역 탭메뉴
     // $(function () {
     //   $('.main-news-section .tab__btn').on('click', function () {

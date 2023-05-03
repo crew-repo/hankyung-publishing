@@ -24,8 +24,30 @@
       <!-- block -->
       <!-- 커튼배너영역 -->
       <div class="cotton-banner is-active">
-        <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
-        <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn" aria-label="레이어 닫기"></button>
+        <div class="cotton-banner__wrap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+            </div>
+          </div>
+          <div class="cotton-banner__close">
+            <label class="o-rdo">
+              <input type="checkbox" class="o-input" name="chk-status"><span class="o-rdo__label">오늘 하루 보지 않기</span>
+            </label>
+            <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn" aria-label="레이어 닫기"></button>
+          </div>
+          <div class="cotton-banner__control">
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper--play btn-autoplay disabled"><span>시작</span></button>
+            <button type="button" class="swiper--pause btn-autoplay"><span>멈춤</span></button>
+          </div>
+        </div>
       </div>
       <!-- 커튼배너영역 -->
       <div class="header__main-block">
@@ -616,6 +638,53 @@
       $(this).toggleClass('is-on');
       $(this).siblings('.buddy-banner__list').toggleClass('is-on');
     });
+
+    // 커튼배너 영역 스와이퍼 & 오토플레이 s
+    function cottonBannerSwiper() {
+      if (typeof (cotton_banner_swiper) == 'object') swiper.destroy();
+      return cotton_banner_swiper = new Swiper(".cotton-banner__wrap",{
+        observer: true,
+        observeParents: true,
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.cotton-banner__control .swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        autoplay: {  
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true
+      });
+    }
+
+    $(window).on("load",function(){
+      cottonBannerSwiper();
+    });
+
+    function playShow() {
+      $('.cotton-banner__control .btn-autoplay.swiper--play').removeClass('disabled');
+      $('.cotton-banner__control .btn-autoplay.swiper--pause').addClass('disabled');
+    }
+
+    function pauseShow() {
+      $('.cotton-banner__control .btn-autoplay.swiper--play').addClass('disabled');
+      $('.cotton-banner__control .btn-autoplay.swiper--pause').removeClass('disabled');
+    }
+
+    $(document).off('click','.cotton-banner__control .btn-autoplay').on('click','.cotton-banner__control .btn-autoplay', function (e) {
+      const btn = $(e.currentTarget);
+
+      if (btn.hasClass('swiper--play')) {
+        cotton_banner_swiper.autoplay.start();
+        pauseShow();
+      } else{
+        cotton_banner_swiper.autoplay.stop();
+        playShow();
+      }
+    });
+    // 커튼배너 영역 스와이퍼 & 오토플레이 e
   </script>
   <!-- 커튼배너 닫기버튼 -->
   <script>

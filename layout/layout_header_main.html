@@ -2,8 +2,30 @@
     <!-- block -->
     <!-- 커튼배너영역 -->
     <div class="cotton-banner is-active">
-      <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
-      <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn" aria-label="레이어 닫기"></button>
+      <div class="cotton-banner__wrap">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="../assets/images/@temp/@cotton-banner01.png" alt="">
+          </div>
+        </div>
+        <div class="cotton-banner__close">
+          <label class="o-rdo">
+            <input type="checkbox" class="o-input" name="chk-status"><span class="o-rdo__label">오늘 하루 보지 않기</span>
+          </label>
+          <button type="button" class="btn-close" onclick="closeBtn();" data-role="hide_btn" aria-label="레이어 닫기"></button>
+        </div>
+        <div class="cotton-banner__control">
+          <div class="swiper-pagination"></div>
+          <button type="button" class="swiper--play btn-autoplay disabled"><span>시작</span></button>
+          <button type="button" class="swiper--pause btn-autoplay"><span>멈춤</span></button>
+        </div>
+      </div>
     </div>
     <!-- 커튼배너영역 -->
     <div class="header__main-block">

@@ -59,13 +59,14 @@
       $(document).off('click', ".all-section [data-menu = search]").on('click', ".all-section [data-menu = search]", function () {
         $(".header-search-bar__wrap").toggleClass(_this.allSectActive);
       });
-
-      $(document).off('click', ".all-section .gnb-menu__depbox > li > a, .all-section-bottom .inquiry-btn").on('click', ".all-section .gnb-menu__depbox > li > a, .all-section-bottom .inquiry-btn", function () {
-        $(".all-section ").removeClass("is-active");
-        $('#wrap').removeClass('dim');
-        $('#header').removeClass('header--opened is-open');
-        $('.lnb-menu').removeClass('is-lnb-active');
-      });
+      // 개발 현행화
+      $(document).off('click', '.all-section .gnb-menu__depbox > li > a, .all-section-bottom .inquiry-btn, .app-home, .buddy-banner__item')
+        .on('click', '.all-section .gnb-menu__depbox > li > a, .all-section-bottom .inquiry-btn, .app-home, .buddy-banner__item', function () {
+          $(".all-section ").removeClass("is-active");
+          $('#wrap').removeClass('dim');
+          $('#header').removeClass('header--opened is-open');
+          $('.lnb-menu').removeClass('is-lnb-active');
+        });
 
       // $(this.closeBtn).off('click.allmenuClose').on('click.allmenuClose', function () {
       //   _this.hidden();
