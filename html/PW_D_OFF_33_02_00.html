@@ -33,7 +33,7 @@
       <!-- START -->
       <section class="artemap-section">
         <!-- side bar -->
-        <aside class="artemap-side is-open">
+        <aside class="artemap-side">
           <div class="artemap-search">
             <!-- 검색창 -->
             <div class="search-group">
@@ -428,6 +428,21 @@
   </script>
 
   <script>
+    // PC,MO 사이드 열림닫힘 설정      
+    $(document).ready(function(){
+      var windowWidth = $(window).width();
+      function isOpenToggleClass(){
+        if (windowWidth < 768) {
+          //창 가로 크기가 768 미만일 경우
+          $('.artemap-side').removeClass('is-open')
+        } else {
+          //창 가로 크기가 768보다 클 경우
+          $('.artemap-side').addClass('is-open')
+        }
+      }
+      isOpenToggleClass();
+    });
+
     // 임시
     var btnFilter = $('.artemap-section .btn.filter');
     var btnClose = $('.pop__close');
