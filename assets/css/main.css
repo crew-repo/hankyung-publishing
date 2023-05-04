@@ -24,6 +24,10 @@
 
 .main-kv--imgs { position: relative; height: 1080px; }
 
+.main-kv__link { position: absolute; top: 50%; left: 10%; transform: translateY(-50%); width: 40%; height: 30%; z-index: 2; }
+
+.main-kv__link a { width: 100%; height: 100%; display: block; }
+
 .main-kv__slider { height: 100%; }
 
 .main-kv__inner { overflow: hidden; position: relative; max-width: 1920px; height: 100%; margin: 0 auto; }
@@ -76,7 +80,7 @@
 
 .main-kv__textbox { display: flex; flex-direction: column; }
 
-.main-kv__btn { position: relative; display: inline-block; width: 80px; height: 80px; margin-top: 48px; border: 1px solid #000000; border-radius: 50%; overflow: hidden; transform: translateY(100%); opacity: 0; background-color: #F5F3EC; }
+.main-kv__btn { position: relative; display: inline-block; width: 38px; height: 38px; margin-top: 48px; border-radius: 50%; overflow: hidden; transform: translateY(100%); opacity: 0; }
 
 .main-kv__btn.active { animation: textShow 0.5s 0.3s ease-in-out forwards; }
 
@@ -84,7 +88,7 @@
 
 .main-kv__btn span { overflow: hidden; position: absolute; display: inline-block; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; white-space: nowrap; clip: rect(0, 0, 0, 0); z-index: -1; }
 
-.main-kv__btn:before { content: ''; position: absolute; top: 50%; left: 50%; width: 24px; height: 24px; transform: translate(-50%, -50%); background-size: 100% auto; background-position: 50% 50%; background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z' fill='%23171010'/%3E%3C/svg%3E"); }
+.main-kv__btn:before { content: ''; position: absolute; top: 50%; left: 50%; width: 38px; height: 38px; transform: translate(-50%, -50%); background-size: 100% auto; background-position: 50% 50%; background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='38' height='38' rx='19' fill='black' fill-opacity='0.6' style='mix-blend-mode:multiply'/%3E%3Cpath d='M19 11L17.59 12.41L23.17 18H11V20H23.17L17.59 25.59L19 27L27 19L19 11Z' fill='%23F5F3EC'/%3E%3Crect x='0.5' y='0.5' width='37' height='37' rx='18.5' stroke='white' stroke-opacity='0.6'/%3E%3C/svg%3E"); }
 
 .main-kv-controls { position: absolute; bottom: 56px; max-width: 1920px; width: 100%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 5; }
 
@@ -1435,10 +1439,11 @@
   .temp_mo { display: block; }
   .main-kv { height: 640px; }
   .main-kv--imgs { height: 177.77778vw; }
+  .main-kv__link { top: 45%; left: 5%; transform: translateY(-50%); width: 80%; height: 50%; }
   .main-kv__inner .main-kv__btn { left: 4.44444vw; top: 131.94444vw; }
   .main-kv__description { -webkit-line-clamp: 3; }
   .main-kv__btn { margin-top: 24px; width: 40px; height: 40px; }
-  .main-kv__btn::before { width: 14px; height: 14px; }
+  .main-kv__btn::before { width: 36px; height: 36px; }
   .main-kv .btn-autoplay { width: 16.67px; height: 16.67px; }
   .main-kv__pagination.swiper-pagination-bullets .swiper-pagination-bullet { width: 8px; height: 8px; }
   .main-kv__description { margin-top: 16px; font-size: 16px; line-height: 1.5; }

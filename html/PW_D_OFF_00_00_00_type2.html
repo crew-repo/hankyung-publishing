@@ -51,6 +51,11 @@
               <!-- KV img -->
               <div class="main-kv__inner">
                 <div class="main-kv__image">
+                  <!-- 링크 div 추가 -->
+                  <div class="main-kv__link">
+                    <a href="#"></a>
+                  </div>
+                  <!-- 링크 div 추가 -->
                   <img src="../assets/images/@temp/@main_keyvisual01.png" alt="" class="show-pc" />
                   <img src="../assets/images/@temp/@main_keyvisual01.png" alt="" class="show-mo" />
                 </div>
@@ -62,6 +67,11 @@
               <!-- KV img -->
               <div class="main-kv__inner">
                 <div class="main-kv__image">
+                  <!-- 링크 div 추가 -->
+                  <div class="main-kv__link">
+                    <a href="#"></a>
+                  </div>
+                  <!-- 링크 div 추가 -->
                   <img src="../assets/images/@temp/@main_keyvisual02.png" alt="" class="show-pc" />
                   <img src="../assets/images/@temp/@main_keyvisual03.png" alt="" class="show-mo" />
                 </div>
@@ -8734,7 +8744,7 @@
       // 커튼배너 영역 스와이퍼 & 오토플레이 s
       function cottonBannerSwiper() {
         if (typeof (cotton_banner_swiper) == 'object') swiper.destroy();
-        return cotton_banner_swiper = new Swiper(".cotton-banner__wrap",{
+        return cotton_banner_swiper = new Swiper(".cotton-banner__wrap", {
           observer: true,
           observeParents: true,
           slidesPerView: 'auto',
@@ -8743,7 +8753,7 @@
             type: 'bullets',
             clickable: true
           },
-          autoplay: {  
+          autoplay: {
             delay: 2500,
             disableOnInteraction: false,
           },
@@ -8751,7 +8761,7 @@
         });
       }
 
-      $(window).on("load",function(){
+      $(window).on("load", function () {
         cottonBannerSwiper();
       });
 
@@ -8765,17 +8775,19 @@
         $('.cotton-banner__control .btn-autoplay.swiper--pause').removeClass('disabled');
       }
 
-      $(document).off('click','.cotton-banner__control .btn-autoplay').on('click','.cotton-banner__control .btn-autoplay', function (e) {
-        const btn = $(e.currentTarget);
+      $(document).off('click', '.cotton-banner__control .btn-autoplay').on('click',
+        '.cotton-banner__control .btn-autoplay',
+        function (e) {
+          const btn = $(e.currentTarget);
 
-        if (btn.hasClass('swiper--play')) {
-          cotton_banner_swiper.autoplay.start();
-          pauseShow();
-        } else{
-          cotton_banner_swiper.autoplay.stop();
-          playShow();
-        }
-      });
+          if (btn.hasClass('swiper--play')) {
+            cotton_banner_swiper.autoplay.start();
+            pauseShow();
+          } else {
+            cotton_banner_swiper.autoplay.stop();
+            playShow();
+          }
+        });
       // 커튼배너 영역 스와이퍼 & 오토플레이 e
     });
 
