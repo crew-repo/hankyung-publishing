@@ -22,6 +22,7 @@
         pagination: {
           el: '.main-kv__pagination',
           type: 'bullets',
+          clickable: true,
         },
         navigation: {
           nextEl: $('.main-kv-controls').find('.swiper--btn-next'),
