@@ -1904,7 +1904,7 @@ function initSwiper() {
 
 function artistVodSwiper() {
   var artist_vod_swiper = new Swiper(".swiper-content .artist-db__wrapper.swiper", {
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-content .swiper-next",
       prevEl: ".swiper-content .swiper-prev",
@@ -1927,7 +1927,7 @@ function artistVodSwiper() {
 
 function artistVodPopupSwiper() {
   var artist_vod_popup_swiper = new Swiper(".pop-video .swiper", {
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".pop-video .swiper-next",
       prevEl: ".pop-video .swiper-prev",
