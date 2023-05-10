@@ -4572,6 +4572,10 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 
 .pop-reply-policy .policy-box { font-size: 12px; line-height: 1.5; }
 
+.pop-reply-policy .policy-box .star-title { font-size: 14px; }
+
+.pop-reply-policy .policy-box .star-box { padding: 15px 0; }
+
 .pop-comment .pop { width: 900px; height: auto; }
 
 .pop-comment .pop__inner { padding-bottom: 0; }
@@ -8213,6 +8217,10 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 .my-content { max-width: 944px; min-width: 0; width: 100%; }
 
 .my-content .btn-area .btn:first-child { color: #666666; border-color: #666666; }
+
+.my-content .btn-area-top { margin-bottom: 25px; }
+
+.my-content .btn-area-top .btn { border-radius: 42px; font-size: 14px; border-color: #DBD3C7; padding: 14px 16px; color: #666; }
 
 .my-summary { display: flex; margin-bottom: 80px; padding: 24px 0; background: #293226; border-radius: 8px; color: var(--color-light); min-height: 149px; }
 
