@@ -297,6 +297,12 @@ input[type='date']::-webkit-inner-spin-button, input[type='date']::-webkit-calen
 
 .reply-list-top .btn-info { position: relative; top: 3px; }
 
+.rating-box .rating-title { display: flex; justify-content: center; }
+
+.rating-box .btn-notice { margin-left: 10px; width: 17px; height: 17px; }
+
+.btn-notice { margin-left: 14px; width: 20px; height: 20px; }
+
 .btn-close { width: 16px; height: 16px; background-repeat: no-repeat; background-position: 50% 50%; background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.66671 1.27301L8.72671 0.333008L5.00004 4.05967L1.27337 0.333008L0.333374 1.27301L4.06004 4.99967L0.333374 8.72634L1.27337 9.66634L5.00004 5.93967L8.72671 9.66634L9.66671 8.72634L5.94004 4.99967L9.66671 1.27301Z' fill='%23171010'/%3E%3C/svg%3E"); background-size: auto; }
 
 .setting__layer .btn-close { position: absolute; top: 15px; right: 12px; }
@@ -8206,6 +8212,8 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 
 .my-content { max-width: 944px; min-width: 0; width: 100%; }
 
+.my-content .btn-area .btn:first-child { color: #666666; border-color: #666666; }
+
 .my-summary { display: flex; margin-bottom: 80px; padding: 24px 0; background: #293226; border-radius: 8px; color: var(--color-light); min-height: 149px; }
 
 .my-summary__item { position: relative; display: flex; flex: 1; justify-content: center; }
@@ -8752,7 +8760,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 @media all and (max-width: 768px) { .artemap-section { position: relative; height: calc(var(--vh, 1vh) * 100 - 60px); }
   .artemap-side { overflow: hidden; left: 0; top: calc(var(--vh, 1vh) * 100 - 218px); width: 100%; height: calc(100% - 16px); border-top: 1px solid #DFDACE; border-radius: 12px 12px 0 0; }
   .artemap-side:before { content: ""; z-index: -1; display: none; position: fixed; left: 0px; top: 60px; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.2); }
-  .artemap-side.is-open { top: 16px; }
+  .artemap-side.is-open { bottom: 15%; }
   .artemap-side.is-open:before, .artemap-side.is-drag:before { display: block; }
   .artemap-side .side-handle { display: block; position: absolute; top: 0; width: 100%; height: 30px; }
   .artemap-side .side-handle:before { content: ''; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 32px; height: 4px; border-radius: 4px; border: 1px solid #DFDACE; border-radius: 4px; background: #D1C4B8; }

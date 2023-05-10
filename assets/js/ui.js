@@ -109,7 +109,7 @@
           _this.allMenuSw = new Swiper('.all-section-wrap .buddy-card.show-pc', {
             slidePerView: '1',
             autoplay: {
-              delay: 5000,
+              delay: 2000,
             },
             pagination: {
               el: ".swiper-pagination",
@@ -124,7 +124,7 @@
           _this.allMenuSw = new Swiper('.all-section-wrap .buddy-card.show-mo', {
             slidePerView: '1',
             autoplay: {
-              delay: 5000,
+              delay: 2000,
             },
           });
         }
