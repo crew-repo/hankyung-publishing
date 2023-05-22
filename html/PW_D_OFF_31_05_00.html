@@ -36,42 +36,59 @@
         <h2 class="head-title">arte SEARCH</h2>
         <div class="search-section">
           <div class="search-section__container">
-            <div class="search-util tab-swiper">
-              <div class="search-category swiper">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide"><a href="#">전체</a></li>
-                  <li class="swiper-slide"><a href="#">음악·공연·전시·책</a></li>
-                  <li class="swiper-slide"><a href="#">리뷰</a></li>
-                  <li class="swiper-slide"><a href="#">뉴스</a></li>
-                  <li class="swiper-slide"><a href="#">아티스트</a></li>
-                  <li class="swiper-slide is-active"><a href="#">영상</a></li>
-                  <li class="swiper-slide"><a href="#">arte TALK</a></li>
-                </ul>
-              </div>
-              <div class="search-box">
-                <input type="text" class="o-input" placeholder="검색어를 입력해주세요">
-                <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
-              </div>
+            <!-- 20230517 -->
+            <div class="search-box type-2">
+              <input type="text" class="o-input" placeholder="검색어를 입력해주세요">
+              <button type="button" class="o-btn o-btn-search" aria-label="검색"></button>
             </div>
+            <!-- //20230517 -->
 
             <div class="search-result__content">
-              <!-- <p class="result-text">검색결과 총 204개</p> -->
+
+              <!-- nodata case -->
+              <div class="search-result__nodata">
+                <p>검색결과가 없습니다.</p>
+              </div>
+              <!-- //nodata case -->
+
+              <!-- 20230517 -->
+              <div class="search-util tab-swiper">
+                <div class="search-category swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#">전체</a></li>
+                    <li class="swiper-slide"><a href="#">음악·공연·전시·도서</a></li>
+                    <li class="swiper-slide"><a href="#">리뷰</a></li>
+                    <li class="swiper-slide"><a href="#">칼럼·연재</a></li>
+                    <li class="swiper-slide"><a href="#">글로벌 아트</a></li>
+                    <li class="swiper-slide"><a href="#">뉴스·인터뷰</a></li>
+                    <li class="swiper-slide"><a href="#">아티스트</a></li>
+                    <li class="swiper-slide is-active"><a href="#">영상</a></li>
+                    <li class="swiper-slide"><a href="#">arte TALK</a></li>
+                  </ul>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+                <div class="result-text">검색결과 총 204개</div>
+              </div>
+              <!-- //20230517 -->
 
               <!-- 영상 -->
               <div class="search-result__list only-items">
                 <div class="search-result__top">
                   <h2 class="search-result__title">영상<span class="num">(15)</span></h2>
-                  <div class="dropdown">
-                    <button type="button" class="dropdown__cur"><em>최신순</em></button>
-                    <ul class="dropdown__list">
-                      <li class="is-on"><button type="button" class="dropdown__btn">최신순</button></li>
-                      <li><button type="button" class="dropdown__btn">조회순</button></li>
-                      <li><button type="button" class="dropdown__btn">좋아요순</button></li>
-                      <li><button type="button" class="dropdown__btn">댓글순</button></li>
+                  <!-- sort list -->
+                  <div class="view-sort">
+                    <button type="button" class="view-sort__cur">최신순</button>
+                    <ul class="view-sort__list">
+                      <li class="sort-on"><button type="button" class="view-sort__btn">최신순</button></li>
+                      <li><button type="button" class="view-sort__btn">조회순</button></li>
+                      <li><button type="button" class="view-sort__btn">좋아요순</button></li>
+                      <li><button type="button" class="view-sort__btn">댓글순</button></li>
                     </ul>
                   </div>
+                  <!--// sort list -->
                 </div>
-                <div class="search-result__box">
+                <div class="search-result__box top-line">
+                  <!-- 20230517 -->
                   <div class="vod-grid-wrap">
                     <div class="vod-grid grid-items-5">
                       <div class="vod-grid__item">
@@ -85,7 +102,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">마포문화재단TV<span class="text-time">999min</span></p>
                             <div class="vod-card__info">
                               <div class="art-info-sub">
                                 <span class="text-time">999min</span>
@@ -96,7 +113,9 @@
                                   <span class="acc-num acc-num--comment"><em>25</em></span>
                                 </div>
                                 <!-- 활성화시 'is-fav' -->
+                                <!-- 20230517 -->
                                 <button type="button" class="btn-fav" aria-label="Like"></button>
+                                <!-- //20230517 -->
                               </div>
                             </div>
                           </div>
@@ -114,7 +133,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">마포문화재단TV<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -144,7 +163,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">민음사TV<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -174,7 +193,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">민음사TV<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -204,7 +223,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">민음사TV<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -234,7 +253,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">마포문화재단<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -264,7 +283,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">마포문화재단<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -294,7 +313,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">마포문화재단<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -324,7 +343,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">마포문화재단<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -354,7 +373,7 @@
                           </a>
                           <div class="vod-card__inbox">
                             <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
+                            <p class="vod-card__auth">마포문화재단<span class="text-time">999min</span></p>
 
                             <div class="vod-card__info">
                               <div class="art-info-sub">
@@ -365,307 +384,6 @@
                                   <span class="acc-num acc-num--like"><em>120k</em></span>
                                   <span class="acc-num acc-num--comment"><em>25</em></span>
                                 </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb07.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb08.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb09.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb10.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb07.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb08.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb08.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb08.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb08.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--// vod item -->
-                      </div>
-                      <div class="vod-grid__item">
-                        <!-- vod item -->
-                        <div class="vod-card">
-                          <a href="#" class="thumb-img">
-                            <span class="img-holder">
-                              <img src="../assets/images/@temp/@temp_thumb08.png" alt="">
-                            </span>
-                            <span class="tag-gen">연극</span>
-                          </a>
-                          <div class="vod-card__inbox">
-                            <a href="#" class="vod-card__title">어린 왕자의 순수한 영혼을 연주하고 싶다. 한줄 말줄임 테스트 입니다.</a>
-                            <p class="vod-card__auth">한경 ARTE<span class="text-time">999min</span></p>
-
-                            <div class="vod-card__info">
-                              <div class="art-info-sub">
-                                <span class="text-time">999min</span>
-                                <span class="text-date">2022.10.20</span>
-                                <div class="access-nums">
-                                  <span class="acc-num acc-num--view"><em>25</em></span>
-                                  <span class="acc-num acc-num--like"><em>120k</em></span>
-                                  <span class="acc-num acc-num--comment"><em>25</em></span>
-                                </div>
-                                <!-- 활성화시 'is-fav' -->
-                                <button type="button" class="btn-fav" aria-label="Like"></button>
                               </div>
                             </div>
                           </div>
@@ -708,9 +426,11 @@
 
             </div>
           </div>
-          <div class="search-section__side">
-            <!-- S: [D] 공연정보 컨텐츠 있을 경우 -->
-            <!--<div class="search-banner__item">
+          <!--
+		  <div class="search-section__side">
+		  -->
+          <!-- S: [D] 공연정보 컨텐츠 있을 경우 -->
+          <!--<div class="search-banner__item">
               <div class="pdt">
                 <div class="pdt__card">
                   <a href="#" class="thumb-img">
@@ -735,10 +455,11 @@
                 </div>
               </div>
             </div>-->
-            <!-- E: [D] 공연정보 컨텐츠 있을 경우 -->
+          <!-- E: [D] 공연정보 컨텐츠 있을 경우 -->
 
-            <!-- S: [D] 공연정보 컨텐츠 없을 경우 -->
-            <div class="ad-banner-wrap">
+          <!-- S: [D] 공연정보 컨텐츠 없을 경우 -->
+          <!--
+			<div class="ad-banner-wrap">
               <div class="ad-banner swiper">
                 <div class="ad-banner__list swiper-wrapper">
                   <a href="#" class="ad-banner__item swiper-slide">
@@ -753,8 +474,11 @@
               </div>
               <div class="ad-banner__pagination"></div>
             </div>
-            <!-- E: [D] 공연정보 컨텐츠 없을 경우 -->
-          </div>
+			-->
+          <!-- E: [D] 공연정보 컨텐츠 없을 경우 -->
+          <!--
+		  </div>
+		  -->
         </div>
 
         <!-- Poll -->
