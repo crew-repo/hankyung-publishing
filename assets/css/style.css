@@ -1271,7 +1271,7 @@ body.dark-mode .acc-num--view::before { background-repeat: no-repeat; background
 
 .gnb-menu.is-gnb-active .gnb-menu__list { display: block; }
 
-.lnb-menu { position: absolute; bottom: 0; left: 0; right: 0; display: flex; min-width: 0; padding: 16px var(--both-space); justify-content: center; align-items: center; transition: height 1s; display: none; animation: fadein 0.5s; }
+.lnb-menu { position: absolute; bottom: 0; left: 0; right: 0; display: flex; min-width: 0; padding: 16px var(--both-space); justify-content: center; align-items: center; transition: height 1s; display: none; }
 
 .lnb-menu__current { display: none; }
 
