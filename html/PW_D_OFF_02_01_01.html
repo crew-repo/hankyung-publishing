@@ -74,7 +74,8 @@
                       </span>
                     </a>
                     <!-- ! 추가 -->
-                    <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                    <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                      data-pop-open="popupStarsPolicy"></button>
                   </div>
                   <div class="art-info-sub">
                     <div class="access-nums">
@@ -695,7 +696,8 @@
             <div class="rating-box">
               <span class="rating-title">전문가 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="badge-box">
                 <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
@@ -708,7 +710,8 @@
             <div class="rating-box">
               <span class="rating-title">회원 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="rating-score">
                 <span class="rating-score__current">8.0</span>
@@ -774,7 +777,8 @@
             <div class="rating-box">
               <span class="rating-title">전문가 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="badge-box">
                 <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
@@ -787,7 +791,8 @@
             <div class="rating-box">
               <span class="rating-title">회원 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="rating-score">
                 <span class="rating-score__current">8.0</span>
@@ -853,7 +858,8 @@
             <div class="rating-box">
               <span class="rating-title">전문가 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="badge-box">
                 <!-- 별점이 2개면 p2, 별점이 3개면 p3 추가  -->
@@ -866,7 +872,8 @@
             <div class="rating-box">
               <span class="rating-title">회원 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="rating-score">
                 <span class="rating-score__current">8.0</span>
@@ -932,7 +939,8 @@
             <div class="rating-box">
               <span class="rating-title">전문가 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="badge-box">
                 <!-- 리뷰가 없으면 p0 추가 -->
@@ -945,7 +953,8 @@
             <div class="rating-box">
               <span class="rating-title">회원 평점
                 <!-- ! 추가 -->
-                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"></button>
+                <button type="button" class="btn-info btn-notice" aria-label="정보더보기"
+                  data-pop-open="popupStarsPolicy"></button>
               </span>
               <div class="rating-score">
                 <span class="rating-score__current">8.0</span>
@@ -1499,6 +1508,8 @@
   <!-- (확인용)댓글 관련 팝업 : 각 파일에서 코드 확인 필요-->
   <div class="pop1">후기 작성 : PW_I_ON_CP_01_00.html</div>
   <div class="pop2">후기 이미지 모아보기 : PW_I_ON_CP_02_00.html</div>
+  <!-- 20230601 -->
+  <div class="pop4">메달 및 별점 운영 정책 : PW_I_ON_CP_13_00.html</div>
   <!--// (확인용)댓글 관련 팝업 -->
 
   </div>
@@ -1522,6 +1533,8 @@
       //팝업 확인용 load
       $(".pop1").load("PW_I_ON_CP_01_00.html .pop-wrap");
       $(".pop2").load("PW_I_ON_CP_02_00.html .pop-wrap");
+      // 20230601
+      $(".pop4").load("PW_I_ON_CP_13_00.html .pop-wrap");
     });
   </script>
 </body>

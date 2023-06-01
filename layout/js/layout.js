@@ -42,7 +42,7 @@ function setGnb() {
 $(document).ready(function () {
   // header - gnb setting
   $("#header").load("../layout/" + headerFile + " .header__inner");
-  var timeId = setTimeout(setGnb, 1000);
+  var timeId = setTimeout(setGnb, 1);
 
   // footer 
   if ($("#footer").length) {
@@ -67,6 +67,11 @@ $(document).ready(function () {
       if ($('[data-pop-open=popupReplyWriter]').length) {
         $("<div class='pop3'>/div>").appendTo(".wrap");
         $('.pop3').load("../html/PW_I_ON_CP_08_00.html .pop-wrap");
+      }
+      // 20230601
+      if ($('[data-pop-open=popupStarsPolicy]').length) {
+        $("<div class='pop4'>/div>").appendTo(".wrap");
+        $('.pop4').load("../html/PW_I_ON_CP_13_00.html .pop-wrap");
       }
     });
   }

@@ -1,0 +1,9 @@
+<20230601 헤더메뉴 문제>
+
+layout.js :45
+var timeId = setTimeout(setGnb, 1000);
+-> var timeId = setTimeout(setGnb, 1);
+
+
+style.css :1274
+.lnb-menu {display: none;} 삭제
