@@ -1,0 +1,93 @@
+1) 좋아요한 콘텐츠가 없습니다 이미지
+
+style.css : 5367 line (20230601 푸시한 버전 참조)
+
+.no-like::before {
+background: url(data:image/svg+xml,<svg width="83" height="80" viewBox="0 0 83 80" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36.8509 64.332L36.8473 64.3288C28.2137 56.4998 21.2505 50.1799 16.4156 44.2688C11.6094 38.3927 9.16797 33.2262 9.16797 27.7474C9.16797 18.8614 16.1153 11.9141 25.0013 11.9141C30.0443 11.9141 34.9236 14.2739 38.0979 18.0016L40.0013 20.2367L41.9047 18.0016C45.079 14.2739 49.9583 11.9141 55.0013 11.9141C63.8873 11.9141 70.8346 18.8614 70.8346 27.7474C70.8346 33.2262 68.3932 38.3929 63.5865 44.2736C58.7514 50.1889 51.7888 56.5165 43.1556 64.3618C43.1549 64.3625 43.1541 64.3632 43.1533 64.3639L40.0077 67.2058L36.8509 64.332Z" stroke="%23C5BEB4" stroke-width="5"/><circle cx="65" cy="53" r="18" fill="%23C5BEB4"/><path d="M58.4053 60.0113L72.1992 45.7969" stroke="%23F5F3EC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M72.0152 59.5908L57.8008 45.7969" stroke="%23F5F3EC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>);
+}
+
+
+2) 2 depth LNB 메뉴가 보이게 하는 부분
+style.css : 1274 line (20230601 푸시한 버전 참조)
+.lnb-menu {display: none;} 삭제
+
+3) 2 depth LNB 메뉴 추가 노출
+layout_header_2depth.html : 172 ~ 199 line (20230531 푸시한 버전 참조)
+
+ <ul class="lnb-menu__list type-2">
+              <li><a href="#" class="no-dp">나의 정보</a></li>
+              <li>
+                <a href="#none">나의 활동</a>
+                <div class="my-2dp">
+                  <p><a href="#">작성글</a></p>
+                  <p><a href="#">작성 댓글·답글</a></p>
+                  <p><a href="#">임시저장 글</a></p>
+                </div>
+              </li>
+              <li class="is-active">
+                <!-- 활성화 class="sel" -->
+                <a href="#none">좋아한 콘텐츠</a>
+                <div class="my-2dp">
+                  <p><a href="#">음악·공연·전시·도서</a></p>
+                  <p><a href="#">리뷰</a></p>
+                  <p><a href="#">칼럼·연재</a></p>
+                  <p><a href="#">글로벌 아트</a></p>
+                  <p><a href="#">뉴스·인터뷰</a></p>
+                  <p><a href="#">아티스트</a></p>
+                  <p><a href="#">영상</a></p>
+                  <p><a href="#">arte TALK</a></p>
+                  <p><a href="#">한줄평</a></p>
+                  <p><a href="#">댓글·답글</a></p>
+                </div>
+              </li>
+              <li><a href="#" class="no-dp">1:1 문의</a></li>
+            </ul>
+			
+
+4) 모바일 나의활동, 좋아한 콘텐츠 펼침 아이콘
+
+style.css : 1618 line (20230601 푸시한 버전 참조)
+.lnb-menu.is-lnb-active .lnb-menu__list.type-2 > li > a::after {
+background-image: url(../../assets/images/common/ico_menu_on.svg);
+}
+
+
+5) 모바일 나의활동, 좋아한 콘텐츠 펼침 스크립트
+
+ui.js : 413~447 line (20230602 푸시한 버전 참조)
+
+      $('#header').on('click', _this.lnbListItem + ' a', function (ev) {
+        var target = $(ev.currentTarget);
+        var $lnbBox = target.closest(_this.lnbEl);
+        var curText = target.html();
+        var $selItem = target.closest('li');
+
+        // 20230518 $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
+        // 20230518
+        // 20230525
+        $('.lnb-menu__list').find('.my-2dp').slideUp();
+        if ($(window).width() <= 768) {
+          if ($(this).attr('class') == 'no-dp') {
+            $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
+          } else { // 2뎁스 없다면
+            if ($(this).closest('li').hasClass('sel')) {
+              $(this).closest('li').removeClass('sel');
+            } else {
+              console.log(1);
+              $('.lnb-menu__list').find('.sel').removeClass('sel');
+              $(this).next().slideDown();
+              $(this).closest('li').addClass('sel');
+            }
+          }
+        }
+
+
+        // //20230518 
+        $lnbBox.find(_this.lnbListItem).removeClass(_this.selectName);
+        $selItem.addClass(_this.selectName);
+        _this.headerCheck.close();
+
+        if (target.attr('href') == "#") {
+          ev.preventDefault();
+        }
+      });
