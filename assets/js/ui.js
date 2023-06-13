@@ -1990,19 +1990,20 @@ $(document).ready(function () {
     artistVodSwiper();
   }
 
-  // s 우클릭 방지 스크립트 추가
-  $(document).bind("contextmenu", function (e) {
-    return false;
-  });
-  // e 우클릭 방지 스크립트 추가
 });
 // s 우클릭 방지 스크립트 추가
-$(document).bind('selectstart', function () {
-  return false;
-});
-$(document).bind('dragstart', function () {
-  return false;
-});
+// $(document).bind("contextmenu", function (e) {
+//   return false;
+// });
+// e 우클릭 방지 스크립트 추가
+
+// s 우클릭 방지 스크립트 추가
+// $(document).bind('selectstart', function () {
+//   return false;
+// });
+// $(document).bind('dragstart', function () {
+//   return false;
+// });
 // e 우클릭 방지 스크립트 추가
 
 // 댓글 목록 모바일 더보기 버튼 스크립트
