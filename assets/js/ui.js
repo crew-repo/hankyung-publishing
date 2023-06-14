@@ -95,9 +95,9 @@
       $('#wrap').addClass('dim');
 
       // 커튼배너 클래스 추가 
-      // if ($('.cotton-banner').hasClass('is-active')) {
-      $('.all-section.is-active').addClass('bannerOn');
-      // }
+      if ($('.header__inner').hasClass('header-main')) {
+        $('.all-section.is-active').addClass('bannerOn');
+      }
 
       if (UI.gnb.headerSw !== null) {
         UI.gnb.headerSw.destroy();
