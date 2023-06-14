@@ -95,7 +95,7 @@
       $('#wrap').addClass('dim');
 
       // 커튼배너 클래스 추가 
-      if ($('.cotton-banner').hasClass('is-active')) {
+      if ($('.cotton-banner')) {
         $('.all-section.is-active').addClass('bannerOn');
       }
 
@@ -416,10 +416,11 @@
         var curText = target.html();
         var $selItem = target.closest('li');
 
-        // 20230518 $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
+        // 20230518
+        $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
         // 20230518
         // 20230525
-        $('.lnb-menu__list').find('.my-2dp').slideUp();
+        // $('.lnb-menu__list').find('.my-2dp').slideUp();
         if ($(window).width() <= 768) {
           if ($(this).attr('class') == 'no-dp') {
             $lnbBox.removeClass(_this.openName).find(_this.lnbCur).html(curText);
